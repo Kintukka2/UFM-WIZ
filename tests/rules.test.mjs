@@ -70,7 +70,7 @@ test('rarities carry the measured chip pair', () => {
   assert.equal(RARITIES.filter((r) => r.fill).length, 48);
   for (const r of RARITIES.filter((x) => x.fill)) assert.match(r.fill + r.rim, /^#[0-9A-F]{6}#[0-9A-F]{6}$/);
   assert.equal(new Set(RARITIES.map((r) => r.id)).size, RARITIES.length);
-  assert.deepEqual(QUALITIES.map((q) => q.name), ['Bronze', 'Silver', 'Gold', 'Gold Rare', 'Elite', 'Premium']);
+  assert.deepEqual(QUALITIES.map((q) => q.name), ['Bronze', 'Silver', 'Gold', 'Gold Rare']);
 });
 
 test('number formats from the Brand Book', () => {
@@ -83,4 +83,17 @@ test('number formats from the Brand Book', () => {
   assert.equal(timer((12 * 24 + 17) * 3600000), '12D 17H');
   assert.equal(int(21500), '21,500');
   assert.equal(day('2026-10-31'), 'Sat 31 Oct');
+});
+
+test('a base card takes its quality from its OVR, on the bands the rating filter prints', async () => {
+  const { qualityFor } = await import('../site/js/data/rarities.js');
+  const { normalize } = await import('../site/js/lib/cards.js');
+  const edges = { 45: 'bronze', 64: 'bronze', 65: 'silver', 74: 'silver', 75: 'gold', 82: 'gold', 83: 'rare', 99: 'rare' };
+  for (const [ovr, q] of Object.entries(edges)) assert.equal(qualityFor(Number(ovr)), q, `OVR ${ovr}`);
+  // the four bands cover 45 to 99 with no gap and no overlap
+  for (let ovr = 45; ovr <= 99; ovr++) assert.equal(QUALITIES.filter((q) => ovr >= q.from && ovr <= q.to).length, 1, `OVR ${ovr}`);
+  // what a file or an older save says about quality is dropped
+  assert.equal(normalize({ name: 'Test Striker', ovr: 84, pos: 'ST', quality: 'Gold' }).card.quality, 'rare');
+  assert.equal(normalize({ name: 'Test Back', ovr: 70, pos: 'LB', quality: 'Premium' }).errors.length, 0);
+  assert.equal(normalize({ name: 'Test Back', ovr: 70, pos: 'LB' }).card.quality, 'silver');
 });

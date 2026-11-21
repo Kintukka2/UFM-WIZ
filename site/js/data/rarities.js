@@ -4,6 +4,8 @@
 // can't use, so this pair is how we tell them apart instead: never recolour one.
 // Names are what the player sees on the card ("Matchday", not the internal name).
 
+import { CARD_QUALITY } from './game.js';
+
 export const RARITIES = [
   { id: 'normal', name: 'Normal', fill: null, rim: null },
   { id: 'academics', name: 'Academics', fill: '#2A3F36', rim: '#8E5723' },
@@ -56,19 +58,19 @@ export const RARITIES = [
   { id: 'world-weekly', name: 'World Weekly', fill: '#0A0A08', rim: '#2E6EBB' },
 ];
 
-// Base qualities are a property of the card, not an OVR band: the game renders
-// 73 to 76 silver and 77 to 78 gold on the same market screen. Elite and Premium
-// are in the game data with no measured frame, so they borrow the Gold Rare foil.
+// A base card's quality is set by its OVR. The game prints the four bands on
+// the market's rating filter (see CARD_QUALITY in game.js), and nothing else
+// decides it: every base card from 83 up is Gold Rare.
 export const QUALITIES = [
   { id: 'bronze', name: 'Bronze', fill: '#DCA981', rim: '#C68C63', metal: 'bronze' },
   { id: 'silver', name: 'Silver', fill: '#BBCCD5', rim: '#9EB2BB', metal: 'silver' },
   { id: 'gold', name: 'Gold', fill: '#E6D687', rim: '#D8BA68', metal: 'gold' },
   { id: 'rare', name: 'Gold Rare', fill: '#E8C975', rim: '#BE9959', metal: 'rare' },
-  { id: 'elite', name: 'Elite', fill: '#E8C975', rim: '#BE9959', metal: 'rare' },
-  { id: 'premium', name: 'Premium', fill: '#E8C975', rim: '#BE9959', metal: 'rare' },
-];
+].map((q) => ({ ...q, from: CARD_QUALITY[q.id][0], to: CARD_QUALITY[q.id][1] }));
 
 export const rarity = (id) => RARITIES.find((r) => r.id === id) || RARITIES[0];
 export const quality = (id) => QUALITIES.find((q) => q.id === id) || QUALITIES[2];
+// The quality an OVR puts a card in. Below the lowest band counts as Bronze.
+export const qualityFor = (ovr) => (QUALITIES.find((q) => ovr >= q.from && ovr <= q.to) || QUALITIES[ovr > 99 ? 3 : 0]).id;
 // "Normal" and the two system sets don't count as a special for Chemistry.
 export const isSpecial = (id) => !!id && !['normal', 'starter', 'ptc'].includes(id);

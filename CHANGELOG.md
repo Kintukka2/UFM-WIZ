@@ -8,6 +8,22 @@ a release.
 
 ## [Unreleased]
 
+## [0.4.0] - Unreleased
+
+### Changed
+
+- **A card's quality now follows its OVR, the way the game sets it.** Bronze
+  is 45 to 64, Silver 65 to 74, Gold 75 to 82 and Gold Rare 83 to 99, as the
+  market's rating filter prints them. The Quality choice is gone from the card
+  form, and a quality column in a CSV is ignored.
+- **Saved cards:** nothing is lost. A card in My cards that was saved with a
+  different quality shows the one its OVR sets the next time the site opens.
+
+### Removed
+
+- **Elite and Premium are no longer card qualities.** They belong to packs. A
+  PTC requirement saved with either one no longer matches any card.
+
 ## [0.3.0] - Unreleased
 
 ### Changed
