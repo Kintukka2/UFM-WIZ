@@ -8,6 +8,14 @@ a release.
 
 ## [Unreleased]
 
+## [0.3.0] - Unreleased
+
+### Changed
+
+- **Gold Rare cards are brushed, the way the game draws them.** Fine gold
+  streaks cross the left shoulder and the right hem, inside the foil border.
+  Nothing you have saved is affected.
+
 ## [0.2.1] - Unreleased
 
 ### Fixed

@@ -86,6 +86,8 @@ Rendered: active tab `#F3D87F` with text `#444230`; inactive tab `#54452E` with 
 | Gold Rare | 639×870 | `#C8A958 #E3C970 #EBD27A #E4C76F #DAB862 #C8A251 #AE853F` | `#7E5223` (inner band) |
 | New Season | 689×906 | `#EADBB6 #B1935D #323030 #343434 #222021 #0D0B0B #42301C` | `#FEF9E3` |
 
+**Gold Rare brushing** (a player's screenshot of the substitution screen, 84 OVR card, 21 Nov 2026): fine streaks at about 57° from horizontal, rising to the right, in two fans: across the top-left corner (to about 48% of the width along the top edge and 52% of the height down the left) and across the bottom-right corner (from about 60% of the height on the right edge to 62% of the width along the hem). On screen the plain face reads ; the streaks run from  (5th percentile by brightness) to  (95th) at the top and  to  at the bottom. Drawn with the brush streak's dark  and the foil's peak , which hold that contrast on the authored face.
+
 **Silhouette** (gold frame, alpha > 50%): collar notch to 5.3% at the centre of the top edge; shoulders 1.2% at x = 40%, 11.4% at x = 2%; straight sides from 20% to 72% height at x = 1.6%; waist step to 5.8% between 72% and 80%; hem tapers from 85% to a point at 98.7%.
 
 ## Rarity chips (authored, `*_playercard_hexagon`, 86×96)

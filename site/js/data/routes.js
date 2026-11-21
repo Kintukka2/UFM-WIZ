@@ -7,7 +7,7 @@
 export const SITE = {
   name: 'UFMWiz',
   origin: 'https://ufmwiz.com',
-  version: '0.2.1',
+  version: '0.3.0',
   game: 'Ultimate Football Manager 27',
   build: '27.4.0',
 };
