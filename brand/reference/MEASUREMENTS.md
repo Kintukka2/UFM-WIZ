@@ -168,6 +168,22 @@ The drawings in `tools/make-sets.mjs` use these values and nothing from the thum
 | Veterans | `#EBDFD3 #E5D5C7 #D3BDA8 #E9DDD6` | `#DBAF72 #CE9C5B #B77941 #977555 #79583A`, highlight `#FAEAD2` | `#9E744C #C89B6C #E3BC8E` |
 | Weekend League | `#7E928A #435352 #1D2F28 #101B17 #010202` | `#77BF60 #46A54F #ABD470`, highlight `#BCDD95` | `#0D1610 #202E28 #7DA054` |
 
+A second pass sampled single regions of the same thumbnails (10th, 50th and 92nd percentile by brightness) for the parts the first pass averaged away:
+
+| Set | Region | Values |
+|---|---|---|
+| European Evolutions | left ribbon; right ribbon | `#4A0066 #BF10BB #E479DD`; `#0000D1 #004490 #2074D8` |
+| Harvest | top-left ground; sheaf; foot | `#2D4532 #354E31 #6A5A24`; `#6A3C13 #9A6C24 #EDC738`; `#2C1C0E #421E09` |
+| Harvest | leaves | `#47340E #8A5C12 #E6B628` |
+| Mavericks | plate; frame; warning stripes | `#393D41 #4C5157 #61676C`; `#323639 #5F5F5F #C0BFBF`; `#18191A #EABC4C` |
+| Screamers | mist; night sky; ground | `#04241B #125967 #0BAF8A`; `#061B61 #0F2270`; `#362058 #3F2A9E #4A34E2` |
+| Shapeshifters | purple columns | `#291C5B #442E80` |
+| Super Heroes | frame's gold line; centre | `#FEE061 #FCD630`; `#28749C #2586BC #3493B8` |
+| Team of the Week | steel plates; yellow plate; lit edge | `#707480 #A5AAB5 #B4B9C5`, `#6D6868 #827F80`; `#8C5A07 #CAA408 #E5E508`; `#FCD019` |
+| Transfer Stars | bright strokes | `#013648 #00CFC2` |
+| Veterans | marble; sheen; medal ring; field and laurel; centre stone | `#DAC3B2 #E6D9D1 #EDE4DE`; `#C8A080`; `#5D2E15 #946A44 #CCB68C`; `#4E280E #765132 #A89482`; `#4F3C27 #928478` |
+| Weekend League | slab; break | `#172E1E #424F52 #738284`, `#020405 #08170E`; `#08180C #3A6E44 #A2D177` |
+
 ## Fonts (embedded name tables)
 
 | File | Family | Designer / foundry | Licence |
