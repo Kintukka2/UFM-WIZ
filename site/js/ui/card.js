@@ -3,7 +3,7 @@
 // only ever show the game's own data.
 
 import { esc } from '../lib/util.js';
-import { statsFor } from '../data/football.js';
+import { statsFor, NO_STAT } from '../data/football.js';
 import { rarity as rarityOf, quality as qualityOf } from '../data/rarities.js';
 
 // Relative luminance, to pick the numerals: light fills take dark, dark take white.
@@ -64,7 +64,7 @@ export function shirtCard(card, { label = '' } = {}) {
   const { cls, style } = metal(card);
   const defs = statsFor(card.pos[0]);
   const order = [0, 3, 1, 4, 2, 5].map((i) => defs[i]);
-  const stats = order.map((s) => `<span><em>${s.label}</em>${card.stats?.[s.key] ?? '–'}</span>`).join('');
+  const stats = order.map((s) => `<span><em>${s.label}</em>${card.stats?.[s.key] ?? NO_STAT}</span>`).join('');
   return `<div class="ucard ${cls}" style="${style}"><div class="ucard__face">`
     + `<div class="ucard__ovr"><b>${card.ovr}</b><span>${esc(card.pos[0])}</span></div>`
     + `<div class="ucard__name">${esc(shortName(card.name))}</div>`
@@ -98,7 +98,7 @@ export function crest(club) {
 // The standings row: crest, club over name, OVR hex, position, three stats.
 export function cardRow(card, { on = false, attrs = '' } = {}) {
   const defs = statsFor(card.pos[0]).slice(0, 3);
-  const stats = defs.map((s) => `<span class="lstat"><span>${s.label}</span><b>${card.stats?.[s.key] ?? '–'}</b></span>`).join('');
+  const stats = defs.map((s) => `<span class="lstat"><span>${s.label}</span><b>${card.stats?.[s.key] ?? NO_STAT}</b></span>`).join('');
   return `<div class="lrow${on ? ' is-on' : ''}" ${attrs}>${crest(card.club)}`
     + `<span class="lrow__name"><small>${esc(card.club || card.nation || '—')}</small><b>${esc(card.name)}</b></span>`
     + `${hexchip(card.ovr, card)}<span class="lrow__pos">${esc(card.pos[0])}</span>${stats}</div>`;

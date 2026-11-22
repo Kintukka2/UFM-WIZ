@@ -5,7 +5,7 @@
 //
 //   published  a name, an OVR and a position that the card model accepts.
 //              Goes into site/data/cards.json. Stats are not required: a
-//              card page shows a dash for a stat nobody captured, and the
+//              card shows ?? for a stat nobody captured, and the
 //              tools work off OVR, position, quality, rarity, nation, league
 //              and club.
 //   pending    a player we know about but can't show yet: no OVR, or no
@@ -38,8 +38,8 @@ const PENDING = join(ROOT, 'docs/data/pending-cards.md');
 // ("pos", "rating", "team"); those are read the same.
 export const COLUMNS = ['name', 'ovr', 'position', 'quality', 'rarity', 'nation', 'league', 'club', 'age',
   'pac', 'sho', 'pas', 'drb', 'def', 'phy', 'div', 'han', 'kck', 'ref', 'spd', 'gkp', 'sellable',
-  'contributor', 'source', 'captured', 'notes'];
-const ALIAS = { pos: 'position', positions: 'position', rating: 'ovr', overall: 'ovr', nationality: 'nation', team: 'club', gkpos: 'gkp', speed: 'spd', handle: 'contributor', date: 'captured' };
+  'slot', 'contributor', 'source', 'captured', 'notes'];
+const ALIAS = { pos: 'position', positions: 'position', rating: 'ovr', overall: 'ovr', nationality: 'nation', team: 'club', gkpos: 'gkp', speed: 'spd', handle: 'contributor', date: 'captured', no: 'slot', number: 'slot', bookslot: 'slot' };
 
 const ABOUT = 'The UFMWiz card database. Every card here was read off a card in the game by a player and sent in; none was taken from the game\'s files or servers. Written by node tools/build-cards.mjs from data/ufm27-extraction.csv: do not edit by hand.';
 
@@ -59,7 +59,12 @@ export function split(text) {
     if (missing.length) { pending.push({ line, raw, missing, from }); return; }
     const { card, errors } = normalize({ ...raw, id: 'x' });
     if (errors.length) { human.push({ line, name: raw.name, problem: errors[0] }); return; }
-    const key = [card.name.toLowerCase(), card.rarity, card.quality, card.ovr, card.pos[0]].join('|');
+    // The book number a club's Collection Book prints beside a player ("#12"), when it was read.
+    const slot = /^#?\d{1,3}$/.test(raw.slot || '') ? Number(raw.slot.replace('#', '')) : null;
+    if (raw.slot && slot === null) { human.push({ line, name: raw.name, problem: `Slot "${raw.slot}" is not a book number.` }); return; }
+    if (slot) card.slot = slot;
+    // Books print surnames, so two rows are one card only if the club and the slot agree too.
+    const key = [card.name.toLowerCase(), card.club.toLowerCase(), card.rarity, card.ovr, card.pos[0], slot ?? ''].join('|');
     if (seen.has(key)) { human.push({ line, name: card.name, problem: `The same card as row ${seen.get(key)}.` }); return; }
     seen.set(key, line);
     cards.push({ card, meta: { contributor: from, source: raw.source || '', captured: raw.captured || '' } });
@@ -77,6 +82,7 @@ export function cardsJSON({ cards }) {
     const out = { id: card.id, name: card.name, ovr: card.ovr, pos: card.pos, quality: card.quality, rarity: card.rarity };
     for (const k of ['nation', 'league', 'club']) if (card[k]) out[k] = card[k];
     if (card.age) out.age = card.age;
+    if (card.slot) out.slot = card.slot;
     out.stats = card.stats;
     out.sellable = card.sellable;
     for (const k of ['contributor', 'captured']) if (meta[k]) out[k] = meta[k];
@@ -100,7 +106,7 @@ Don't edit this by hand: fill the gap in the sheet instead, and the card moves
 into the database on the next build.
 
 A card reaches the database when it has a name, an **OVR** and a **position**.
-Stats are not required: a card page shows a dash for a stat nobody captured.
+Stats are not required: a card shows ?? for a stat nobody captured.
 
 | | Cards |
 |---|---|

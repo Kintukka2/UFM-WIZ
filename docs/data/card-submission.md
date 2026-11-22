@@ -56,10 +56,31 @@ if either output is stale, so a sheet edit without a rebuild can't ship.
 | `pac` … `phy` | no | An outfield card's six sub-stats, as the card prints them in two columns: PAC DRB / SHO DEF / PAS PHY. |
 | `div` `han` `kck` `ref` `spd` `gkp` | no | A keeper's six instead: Diving, Handling, Kicking, Reflexes, Speed (the card prints it as PAC) and Positioning (POS). |
 | `sellable` | no | `no` for a card marked Unsellable; blank or `yes` otherwise. |
+| `slot` | no | The number a club's Collection Book prints beside the player, `12` for `#12`. Blank for a card the book shows in full, which prints no number. |
 | `contributor` | yes | Their handle, their spelling. |
 | `source` | yes | Where it came from: `Discord #cards`, `email`, `own account`. |
-| `captured` | yes | The day the screenshot was taken, `YYYY-MM-DD`. Ratings change when the game pushes new ones, so the date matters. |
+| `captured` | yes | The day the screenshot was taken, `YYYY-MM-DD`, or the day it reached us if nobody recorded that. Ratings change when the game pushes new ones, so the date matters. |
 | `notes` | no | Anything a reviewer should know. Never shown on the site. |
+
+### From a Collection Book page
+
+A club's Collection Book shows every player the club has, and that is the
+quickest way to fill the database: one screenshot of a spread is up to 24
+cards. A card the player doesn't own prints as an outline with four things on
+it, and those are all a row from a book page carries:
+
+- `ovr` and `position`, top left of the outline;
+- `slot`, the `#` number in the middle;
+- `name`, the surname under it.
+
+`club` is the book's title and `league` is printed top right. The sub-stats,
+the nationality and the age are not on an outline, so they stay blank and the
+site prints `??` for each stat until someone reads the card itself. A card the
+player owns shows in full: take its stats and its nation flag too, and leave
+`slot` blank, because a full card prints no number.
+
+The book prints surnames only, so one club can hold two players with the same
+name. The slot is what tells them apart, and a card's address carries the club.
 
 The first row of the sheet names the columns. A column can be left out
 entirely; a row can leave any optional field blank.
@@ -69,7 +90,7 @@ entirely; a row can leave any optional field blank.
 Made-up cards, to show the shape only:
 
 ```
-name,ovr,position,quality,rarity,nation,league,club,age,pac,sho,pas,drb,def,phy,div,han,kck,ref,spd,gkp,sellable,contributor,source,captured,notes
+name,ovr,position,quality,rarity,nation,league,club,age,pac,sho,pas,drb,def,phy,div,han,kck,ref,spd,gkp,sellable,slot,contributor,source,captured,notes
 Test Striker,86,ST,Gold Rare,,Testland,Test League 1,Test FC,27,88,87,72,80,40,79,,,,,,,yes,TesterOne,Discord #cards,2026-10-29,
 Demo Keeper,81,GK,Gold,,Testland,Test League 2,Demo City,,,,,,,,82,79,70,84,48,80,yes,tester_two,own account,2026-10-30,
 Waiting Winger,,LW,Gold,Team of the Week,,,Sample United,,,,,,,,,,,,,,,TesterOne,Discord #cards,2026-10-30,OVR hidden behind a badge

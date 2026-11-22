@@ -33,6 +33,8 @@ export const GK_STATS = [
   { key: 'spd', label: 'PAC', name: 'Speed' },
   { key: 'gkp', label: 'POS', name: 'Positioning' },
 ];
+// What a sub-stat prints as until a player has read it off the card.
+export const NO_STAT = '??';
 export const statsFor = (pos) => (pos === 'GK' ? GK_STATS : OUTFIELD_STATS);
 
 // The 19 formations, by the game's own id and name, each as its eleven

@@ -5,7 +5,7 @@
 // see in the game and submit; no rating is taken from the game's files.
 
 import { esc, on, load, save, uid } from '../lib/util.js';
-import { POSITIONS, POSITION_NAMES, statsFor } from '../data/football.js';
+import { POSITIONS, POSITION_NAMES, statsFor, NO_STAT } from '../data/football.js';
 import { QUALITIES, RARITIES, rarity as rarityOf, quality as qualityOf } from '../data/rarities.js';
 import { myCards, databaseCards, cardsFromCSV, cardsToCSV, CSV_COLUMNS } from '../lib/cards.js';
 import { DEFAULT_FILTER, SORTS, filterCards, sortCards, band } from '../lib/filter.js';
@@ -49,7 +49,7 @@ function statCols(c, sortKey) {
 }
 
 function row(c, s, on) {
-  const stats = statCols(c, s.sort).map((x) => `<span class="lstat${x.key === s.sort ? ' is-sort' : ''}"><span>${x.label}</span><b>${c.stats?.[x.key] ?? '–'}</b></span>`).join('');
+  const stats = statCols(c, s.sort).map((x) => `<span class="lstat${x.key === s.sort ? ' is-sort' : ''}"><span>${x.label}</span><b>${c.stats?.[x.key] ?? NO_STAT}</b></span>`).join('');
   return `<div class="lrow pl-row${on ? ' is-on' : ''}" role="button" tabindex="0" data-card="${esc(c.id)}" aria-pressed="${on}">`
     + crest(c.club)
     + `<span class="lrow__name"><small>${esc(c.club || c.nation || '—')}</small><b>${esc(c.name)}</b></span>`
@@ -76,7 +76,7 @@ function detailBody(c) {
   const tiles = statsFor(c.pos[0]).map((s) => {
     const v = c.stats?.[s.key];
     const b = band(v);
-    return `<div class="stattile${b ? ' st-' + b : ''}"><b>${v ?? '–'}</b><span>${esc(s.name)}</span></div>`;
+    return `<div class="stattile${b ? ' st-' + b : ''}"><b>${v ?? NO_STAT}</b><span>${esc(s.name)}</span></div>`;
   }).join('');
   const compareBtn = `<button type="button" class="btn btn--sm btn--olive" data-act="compare" data-id="${esc(c.id)}">Compare</button>`;
   const acts = c.source === 'db'

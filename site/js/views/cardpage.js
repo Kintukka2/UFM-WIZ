@@ -11,7 +11,7 @@
 // The route files (card.js, rarity.js, club.js, ...) each pick one kind.
 
 import { esc, on, load, save, int, day } from '../lib/util.js';
-import { POSITIONS, POSITION_NAMES, statsFor } from '../data/football.js';
+import { POSITIONS, POSITION_NAMES, statsFor, NO_STAT } from '../data/football.js';
 import { RARITIES, rarity as rarityOf, quality as qualityOf, isSpecial } from '../data/rarities.js';
 import { databaseCards } from '../lib/cards.js';
 import { band } from '../lib/filter.js';
@@ -34,7 +34,7 @@ function chip(c, label = true) {
 
 // One card as a link in a list: the standings row, the same as on Players.
 function linkRow(c, slugs) {
-  const stats = statsFor(c.pos[0]).slice(0, 3).map((s) => `<span class="lstat"><span>${s.label}</span><b>${c.stats?.[s.key] ?? '–'}</b></span>`).join('');
+  const stats = statsFor(c.pos[0]).slice(0, 3).map((s) => `<span class="lstat"><span>${s.label}</span><b>${c.stats?.[s.key] ?? NO_STAT}</b></span>`).join('');
   return `<a class="lrow pl-row cp-row" href="ufm27/players/${slugs[c.id]}/">${crest(c.club)}`
     + `<span class="lrow__name"><small>${esc(c.club || c.nation || '—')}</small><b>${esc(c.name)}</b></span>`
     + `<span class="pl-row__rar">${chip(c)}</span>${hexchip(c.ovr, c)}<span class="lrow__pos">${esc(c.pos[0])}</span>${stats}</a>`;
@@ -92,7 +92,7 @@ function cardPage(c, w) {
   const tiles = defs.map((s) => {
     const v = c.stats?.[s.key];
     const b = band(v);
-    return `<div class="stattile${b ? ' st-' + b : ''}"><b>${v ?? '–'}</b><span>${esc(s.name)}</span></div>`;
+    return `<div class="stattile${b ? ' st-' + b : ''}"><b>${v ?? NO_STAT}</b><span>${esc(s.name)}</span></div>`;
   }).join('');
   const atPos = w.list.filter((x) => x.pos[0] === c.pos[0]);
   const pr = rankOf(c, atPos), all = rankOf(c, w.list);

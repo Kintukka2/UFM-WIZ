@@ -5,7 +5,8 @@
 // A card:
 //   { id, name, ovr, pos: ['CM', 'CAM'], quality, rarity, nation, league, club,
 //     age, stats: { pac, sho, pas, drb, def, phy } | { div, han, kck, ref, spd, gkp },
-//     sellable, source: 'mine' | 'db' }
+//     sellable, slot (its number in the club's Collection Book, if read),
+//     source: 'mine' | 'db' }
 
 import { POSITIONS, statsFor } from '../data/football.js';
 import { RARITIES, qualityFor } from '../data/rarities.js';
@@ -61,6 +62,9 @@ export function normalize(raw) {
     stats,
     sellable: !(raw.sellable === false || /^(no|false|0|unsellable)$/i.test(String(raw.sellable ?? ''))),
   };
+  // The number a club's Collection Book prints beside the player, when it was read.
+  const slot = Number(String(raw.slot ?? '').replace('#', ''));
+  if (Number.isInteger(slot) && slot > 0) card.slot = slot;
   return { card, errors };
 }
 

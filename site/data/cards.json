@@ -1,5 +1,34 @@
 {
   "about": "The UFMWiz card database. Every card here was read off a card in the game by a player and sent in; none was taken from the game's files or servers. Written by node tools/build-cards.mjs from data/ufm27-extraction.csv: do not edit by hand.",
-  "asOf": null,
-  "cards": []
+  "asOf": "2026-11-22",
+  "cards": [
+    {"id":"barinaga-avellaneda-blue","name":"Barinaga","ovr":71,"pos":["RB"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":10,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"cambeses-avellaneda-blue","name":"Cambeses","ovr":75,"pos":["GK"],"quality":"gold","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":1,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"cannavo-avellaneda-blue","name":"Cannavo","ovr":72,"pos":["RB"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":7,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"carboni-avellaneda-blue","name":"Carboni","ovr":71,"pos":["CAM"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":11,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"colombo-avellaneda-blue","name":"Colombo","ovr":71,"pos":["CB"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":9,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"conechny-avellaneda-blue","name":"Conechny","ovr":71,"pos":["LW"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":8,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"di-cesare-avellaneda-blue","name":"Di Césare","ovr":74,"pos":["CB"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":3,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"diaz-avellaneda-blue","name":"Díaz","ovr":68,"pos":["ST"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":26,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"escudero-avellaneda-blue","name":"Escudero","ovr":53,"pos":["CB"],"quality":"bronze","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":23,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"espino-avellaneda-blue","name":"Espino","ovr":70,"pos":["LB"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":12,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"fernandez-avellaneda-blue","name":"Fernández","ovr":63,"pos":["CAM"],"quality":"bronze","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":19,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"forneris-avellaneda-blue","name":"Forneris","ovr":62,"pos":["CDM"],"quality":"bronze","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":21,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"gomez-avellaneda-blue","name":"Gómez","ovr":50,"pos":["GK"],"quality":"bronze","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":24,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"kranevitter-avellaneda-blue","name":"Kranevitter","ovr":66,"pos":["CDM"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":16,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"lodico-avellaneda-blue","name":"Lodico","ovr":72,"pos":["CM"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":6,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"martinez-avellaneda-blue","name":"Martínez","ovr":75,"pos":["ST"],"quality":"gold","rarity":"normal","nation":"Argentina","league":"Argentina 1","club":"Avellaneda Blue","stats":{"pac":71,"sho":78,"pas":57,"drb":66,"def":36,"phy":76},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"miljevic-avellaneda-blue","name":"Miljevic","ovr":73,"pos":["CAM"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":4,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"ortegoza-avellaneda-blue","name":"Ortegoza","ovr":69,"pos":["CDM"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":15,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"perez-avellaneda-blue-71","name":"Pérez","ovr":71,"pos":["CB"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":27,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"perez-avellaneda-blue-74","name":"Pérez","ovr":74,"pos":["CDM"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":25,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"rodriguez-avellaneda-blue","name":"Rodríguez","ovr":66,"pos":["LM"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":17,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"rojo-avellaneda-blue","name":"Rojo","ovr":62,"pos":["CB"],"quality":"bronze","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":20,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"rubio-avellaneda-blue","name":"Rubio","ovr":59,"pos":["RB"],"quality":"bronze","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":22,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"tagliamonte-avellaneda-blue","name":"Tagliamonte","ovr":70,"pos":["GK"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":14,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"tello-avellaneda-blue","name":"Tello","ovr":50,"pos":["CAM"],"quality":"bronze","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":28,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"torres-avellaneda-blue","name":"Torres","ovr":66,"pos":["ST"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":18,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"vergara-avellaneda-blue","name":"Vergara","ovr":70,"pos":["LW"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":13,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"},
+    {"id":"zaracho-avellaneda-blue","name":"Zaracho","ovr":72,"pos":["CAM"],"quality":"silver","rarity":"normal","league":"Argentina 1","club":"Avellaneda Blue","slot":5,"stats":{},"sellable":true,"contributor":"Kintukka","captured":"2026-11-22"}
+  ]
 }

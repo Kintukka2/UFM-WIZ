@@ -5,11 +5,11 @@ Don't edit this by hand: fill the gap in the sheet instead, and the card moves
 into the database on the next build.
 
 A card reaches the database when it has a name, an **OVR** and a **position**.
-Stats are not required: a card page shows a dash for a stat nobody captured.
+Stats are not required: a card shows ?? for a stat nobody captured.
 
 | | Cards |
 |---|---|
-| In the database | 0 |
+| In the database | 28 |
 | Waiting here for an OVR or a position | 0 |
 | Needs a human | 0 |
 

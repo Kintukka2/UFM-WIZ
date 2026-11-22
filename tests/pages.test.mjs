@@ -76,17 +76,17 @@ test('every page has its own title and canonical', async () => {
 test('a card page says what the card holds, and nothing it does not', async () => {
   const cards = await loadCards(FIXTURE);
   const html = byRel(buildFiles({ cards }));
-  const totw = html['ufm27/players/test-striker-team-of-the-week/index.html'];
+  const totw = html['ufm27/players/test-striker-test-fc-team-of-the-week/index.html'];
   assert.match(totw, /<title>Test Striker 90 Team of the Week \| UFM 27 card ratings and stats \| UFMWiz<\/title>/);
   assert.match(totw, /Unsellable/);
-  assert.match(totw, /href="ufm27\/players\/test-striker\/"/, 'links its other version');
+  assert.match(totw, /href="ufm27\/players\/test-striker-test-fc\/"/, 'links its other version');
   assert.match(totw, /href="ufm27\/rarities\/team-of-the-week\/"/, 'links its set');
   assert.match(totw, /<b>91<\/b><span>Pace<\/span>/);
   assert.match(totw, /1st <small>of 3<\/small>/, 'the best of the three strikers');
-  // A card with no stats captured shows dashes, never a number.
-  const blank = html['ufm27/players/unicode-name/index.html'];
+  // A card with no stats captured shows ?? for each, never a number.
+  const blank = html['ufm27/players/unicode-name-test-fc/index.html'];
   assert.ok(blank, 'an accented name still gets a plain address');
-  assert.equal((blank.match(/<div class="stattile"><b>–<\/b>/g) || []).length, 6);
+  assert.equal((blank.match(/<div class="stattile"><b>\?\?<\/b>/g) || []).length, 6);
   assert.doesNotMatch(blank, /, with PAC/, 'no stats in the description either');
   // No price is ever written into a page: prices are the reader's own.
   assert.doesNotMatch(totw, /\d[\d,]* coins/);
@@ -95,10 +95,10 @@ test('a card page says what the card holds, and nothing it does not', async () =
 test('hubs and the best cards rank by OVR, then the stat total', async () => {
   const html = byRel(buildFiles({ cards: await loadCards(FIXTURE) }));
   const order = (page) => [...page.matchAll(/class="lrow pl-row cp-row" href="ufm27\/players\/([^/]+)\//g)].map((m) => m[1]);
-  assert.deepEqual(order(html['ufm27/positions/st/index.html']), ['test-striker-team-of-the-week', 'test-striker', 'trial-forward']);
-  assert.deepEqual(order(html['ufm27/rarities/team-of-the-week/index.html']), ['test-striker-team-of-the-week', 'sample-winger-team-of-the-week']);
+  assert.deepEqual(order(html['ufm27/positions/st/index.html']), ['test-striker-test-fc-team-of-the-week', 'test-striker-test-fc', 'trial-forward-demo-city']);
+  assert.deepEqual(order(html['ufm27/rarities/team-of-the-week/index.html']), ['test-striker-test-fc-team-of-the-week', 'sample-winger-sample-united-team-of-the-week']);
   const best = html['ufm27/best-cards/index.html'];
-  assert.equal(order(best)[0], 'test-striker-team-of-the-week');
+  assert.equal(order(best)[0], 'test-striker-test-fc-team-of-the-week');
   assert.match(best, /The best Unsellable cards/);
 });
 
@@ -137,13 +137,13 @@ test('the capture sheet splits into published, pending and for a human', async (
     ',80,ST,,,,,,,,,,,,',
   ].join('\n');
   const parts = split(csv);
-  assert.deepEqual(parts.cards.map((x) => x.card.id), ['test-striker', 'test-striker-team-of-the-week']);
+  assert.deepEqual(parts.cards.map((x) => x.card.id), ['test-striker-test-fc', 'test-striker-test-fc-team-of-the-week']);
   assert.deepEqual(parts.pending.map((p) => [p.raw.name, p.missing.join('+')]), [['Waiting Winger', 'OVR'], ['No Position', 'position']]);
   assert.deepEqual(parts.human.map((h) => h.line), [6, 7, 8, 9]);
   assert.match(parts.human[2].problem, /same card as row 2/);
   const json = JSON.parse(cardsJSON(parts));
   assert.equal(json.asOf, '2026-10-30');
-  assert.equal(json.cards.find((c) => c.id === 'test-striker').contributor, 'TesterOne', 'contributors keep their own spelling');
+  assert.equal(json.cards.find((c) => c.id === 'test-striker-test-fc').contributor, 'TesterOne', 'contributors keep their own spelling');
   assert.equal(cardsJSON(parts), cardsJSON(split(csv)), 'the same sheet always writes the same file');
   assert.match(pendingMD(parts), /\| 4 \| Waiting Winger \| LW \| Sample United \| OVR \| TesterOne \|/);
 });
@@ -151,4 +151,33 @@ test('the capture sheet splits into published, pending and for a human', async (
 test('the committed card database is what the sheet writes', () => {
   const r = spawnSync(process.execPath, [join(ROOT, 'tools/build-cards.mjs'), '--check'], { encoding: 'utf8' });
   assert.equal(r.status, 0, r.stderr || r.stdout);
+});
+
+test('a row read from a Collection Book page becomes a card with its club, its slot and no stats', async () => {
+  const { split, cardsJSON } = await import('../tools/build-cards.mjs');
+  const { cardSlugs: slugsOf } = await import('../site/js/lib/carddb.js');
+  const { shirtCard } = await import('../site/js/ui/card.js');
+  const csv = [
+    'name,ovr,position,league,club,slot,contributor,source,captured',
+    'Sample,74,CDM,Test League 1,Test FC,25,TesterOne,own account,2026-11-22',
+    'Sample,71,CB,Test League 1,Test FC,27,TesterOne,own account,2026-11-22',
+    'Sample,71,CB,Test League 1,Test FC,#9,TesterOne,own account,2026-11-22',
+    'Sample,74,CDM,Test League 1,Demo City,25,TesterOne,own account,2026-11-22',
+    'Sample,74,CDM,Test League 1,Test FC,25,TesterOne,own account,2026-11-22',
+    'Sample,60,ST,Test League 1,Test FC,twelve,TesterOne,own account,2026-11-22',
+  ].join('\n');
+  const parts = split(csv);
+  // surnames repeat: the club, then the OVR, then the position, then the slot keep the addresses apart
+  assert.deepEqual(parts.cards.map((x) => x.card.id).sort(), ['sample-demo-city', 'sample-test-fc-71-cb-27', 'sample-test-fc-71-cb-9', 'sample-test-fc-74']);
+  assert.deepEqual(parts.human.map((h) => [h.line, /same card|not a book number/.test(h.problem)]), [[6, true], [7, true]]);
+  const json = JSON.parse(cardsJSON(parts));
+  const card = json.cards.find((c) => c.id === 'sample-test-fc-74');
+  assert.deepEqual([card.quality, card.slot, card.stats], ['silver', 25, {}]);
+  // the browser reads the same file and must reach the same addresses
+  const { normalize } = await import('../site/js/lib/cards.js');
+  const again = slugsOf(json.cards.map((c) => ({ ...normalize(c).card, id: c.id })));
+  for (const c of json.cards) assert.equal(again[c.id], c.id);
+  // a stat nobody has read prints as ??, on the card and never as a number
+  const face = shirtCard(normalize(card).card);
+  assert.equal((face.match(/<\/em>\?\?<\/span>/g) || []).length, 6);
 });

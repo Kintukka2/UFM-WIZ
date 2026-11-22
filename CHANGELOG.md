@@ -8,6 +8,23 @@ a release.
 
 ## [Unreleased]
 
+## [0.5.0] - Unreleased
+
+### Added
+
+- **The card database has its first club.** All 28 players in the Avellaneda
+  Blue book are in, each with its OVR and position, read from a player's
+  Collection Book. They can go straight into the PTC Solver, the Squad Builder
+  and Compare.
+- **A stat nobody has read yet prints as ??.** A Collection Book outline shows
+  a player's OVR and position but not the six sub-stats, so those wait until
+  someone reads the card itself.
+
+### Changed
+
+- **A card's address now carries its club.** The game's books print surnames
+  only, so the club is what keeps two players with one name apart.
+
 ## [0.4.0] - Unreleased
 
 ### Added
