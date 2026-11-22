@@ -8,6 +8,35 @@ a release.
 
 ## [Unreleased]
 
+## [0.5.0] - Unreleased
+
+### Added
+
+- **The card database has its first 12 clubs.** Every player in the
+  Argentina 1 books from Avellaneda Blue to Córdoba Blue is in, 341 cards,
+  each with its OVR and position, read from a player's Collection Book. Six of
+  them carry their full stats too. They can go straight into the PTC Solver,
+  the Squad Builder and Compare.
+- **A stat nobody has read yet prints as ??.** A Collection Book outline shows
+  a player's OVR and position but not the six sub-stats, so those wait until
+  someone reads the card itself. Compare prints it the same way.
+
+### Changed
+
+- **The card is laid out the way the game lays it out.** The stats sit as a
+  small label with its number right beside it, in two columns a third of the
+  way in, and the OVR, the position and the name are set at the game's sizes. The
+  position starts on the same line as the OVR above it. White numbers carry
+  a soft shadow so they hold over a busy face.
+- **Every card shows a player.** A faceless head and shoulders sits behind the
+  name, in the place and the greys the game uses, on base and special cards
+  alike. It is drawn for the site, not taken from the game.
+- **A card prints the whole name it carries.** "Martínez Quarta" stays
+  "Martínez Quarta" instead of being cut to "Quarta", and a long name steps
+  down a size to fit.
+- **A card's address now carries its club.** The game's books print surnames
+  only, so the club is what keeps two players with one name apart.
+
 ## [0.4.0] - Unreleased
 
 ### Added

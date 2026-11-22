@@ -8,7 +8,7 @@ import { FORMATIONS, formation as formationById, slotsFor } from '../data/footba
 import { CHEMISTRY } from '../data/game.js';
 import { myCards, normalize } from '../lib/cards.js';
 import { summarize, refit, autoOrder, place, cardH, PITCH, cleanThresholds, KINDS } from '../lib/squad.js';
-import { shirtCard, shortName, rarityChip } from '../ui/card.js';
+import { shirtCard, rarityChip } from '../ui/card.js';
 import { openDialog, confirmDialog, toast } from '../ui/dialog.js';
 import { pickCard } from '../ui/picker.js';
 import { emptySquad } from '../lib/board.js';
@@ -92,7 +92,7 @@ function pitch(s) {
     const label = `${r.pos}: ${r.card.name}, ${r.card.ovr} OVR, Chemistry ${signed(r.chem)}${r.fit === 'wrong' ? ', out of position' : ''}`;
     return `<div class="sq-slot is-${r.fit}" style="${style}" role="button" tabindex="0" data-slot="${r.i}" aria-label="${esc(label)}">`
       + `<span class="sq-card">${shirtCard(r.card)}</span>`
-      + `<span class="sq-name">${esc(shortName(r.card.name))}</span>`
+      + `<span class="sq-name">${esc(r.card.name)}</span>`
       + `<span class="pips" data-l="${r.chem}" aria-hidden="true"><i></i><i></i><i></i></span></div>`;
   }).join('');
   return `<div class="sq-pitch" style="--card-w:${PITCH.cardW}%;aspect-ratio:1 / ${PITCH.ratio}" role="group" aria-label="Lineup in ${esc(s.formation.name)}">${MARKINGS}${slots}</div>

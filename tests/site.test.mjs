@@ -105,3 +105,12 @@ test('a card of a drawn set wears the set, and its chip keeps the measured pair'
   assert.match(shirtCard({ ...card, rarity: 'new-season' }), /ucard--season/);
   assert.match(hexchip(88, { ...card, rarity: 'new-season' }), /hexchip--set-new-season/);
 });
+
+test('every card carries the player figure, drawn inline and never fetched', async () => {
+  const { shirtCard } = await import('../site/js/ui/card.js');
+  const card = { name: 'Test Striker', ovr: 80, pos: ['ST'], quality: 'gold', rarity: 'normal', stats: {} };
+  for (const rarity of ['normal', 'team-of-the-week', 'new-season', 'christmas']) assert.match(shirtCard({ ...card, rarity }), /<i class="ucard__plyr" aria-hidden="true"><\/i>/, rarity);
+  assert.doesNotMatch(shirtCard(null), /ucard__plyr/, 'an empty slot keeps its own outline');
+  const css = await readFile(join(SITE, 'css/ufm.css'), 'utf8');
+  assert.match(css, /--tex-player: url\("data:image\/svg\+xml,/);
+});

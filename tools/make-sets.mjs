@@ -424,7 +424,7 @@ export function stylesheet() {
    here. A chip keeps its measured fill and rim under the motif.
    ============================================================ */
 
-.ucard--set { --cink: #FFFFFF; --set-shade: .5; --set-inset: 3.2%; --set-lip: 1.3%; background: var(--set-rim); }
+.ucard--set { --cink: #FFFFFF; --cshadow: var(--ufm-ink-lift); --set-shade: .5; --set-inset: 3.2%; --set-lip: 1.3%; background: var(--set-rim); }
 
 /* the frame's inner lip: the rim again, mirrored and in shadow, so the frame reads as bevelled */
 .ucard--set::before {
@@ -451,7 +451,7 @@ export function stylesheet() {
 `];
   for (const s of SETS) {
     if (!s.chipOnly) {
-      out.push(`.ucard--set-${s.id} {\n  --set-base: ${s.base};\n  --set-rim: ${s.rim};${s.ink ? `\n  --cink: ${s.ink};` : ''}${s.shade !== undefined ? `\n  --set-shade: ${s.shade};` : ''}${s.rim2 ? `\n  --set-rim2: ${s.rim2};` : ''}${s.inset ? `\n  --set-inset: ${s.inset}; --set-lip: ${s.lip};` : ''}${s.frame ? `\n  --set-frame: ${s.frame()};` : ''}\n  --set-art: ${s.art()};\n}\n`);
+      out.push(`.ucard--set-${s.id} {\n  --set-base: ${s.base};\n  --set-rim: ${s.rim};${s.ink ? `\n  --cink: ${s.ink}; --cshadow: none;` : ''}${s.shade !== undefined ? `\n  --set-shade: ${s.shade};` : ''}${s.rim2 ? `\n  --set-rim2: ${s.rim2};` : ''}${s.inset ? `\n  --set-inset: ${s.inset}; --set-lip: ${s.lip};` : ''}${s.frame ? `\n  --set-frame: ${s.frame()};` : ''}\n  --set-art: ${s.art()};\n}\n`);
     }
     out.push(`.hexchip--set-${s.id}, .rchip--set-${s.id} { --set-chip: ${CHIPS[s.id]()}; }\n`);
   }

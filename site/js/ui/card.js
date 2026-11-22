@@ -3,7 +3,7 @@
 // only ever show the game's own data.
 
 import { esc } from '../lib/util.js';
-import { statsFor } from '../data/football.js';
+import { statsFor, NO_STAT } from '../data/football.js';
 import { rarity as rarityOf, quality as qualityOf } from '../data/rarities.js';
 
 // Relative luminance, to pick the numerals: light fills take dark, dark take white.
@@ -50,7 +50,7 @@ function metal(card) {
   if (r.fill) {
     const ink = lum(r.fill) > 0.4 ? 'var(--ufm-ink-card)' : '#FFFFFF';
     const m = `linear-gradient(-8deg, transparent 0 64%, ${r.rim} 64% 66.5%, transparent 66.5% 70%, ${r.rim} 70% 71.5%, transparent 71.5%), linear-gradient(172deg, ${shade(r.fill, 0.18)} 0%, ${r.fill} 48%, ${shade(r.fill, -0.35)} 100%)`;
-    return { cls: 'ucard--special', style: `--m:${m};--rim:${r.rim};--cink:${ink}` };
+    return { cls: 'ucard--special', style: `--m:${m};--rim:${r.rim};--cink:${ink}${ink === '#FFFFFF' ? ';--cshadow:var(--ufm-ink-lift)' : ''}` };
   }
   const q = qualityOf(card.quality).metal;
   return { cls: q === 'gold' ? '' : `ucard--${q}`, style: '' };
@@ -64,24 +64,17 @@ export function shirtCard(card, { label = '' } = {}) {
   const { cls, style } = metal(card);
   const defs = statsFor(card.pos[0]);
   const order = [0, 3, 1, 4, 2, 5].map((i) => defs[i]);
-  const stats = order.map((s) => `<span><em>${s.label}</em>${card.stats?.[s.key] ?? '–'}</span>`).join('');
-  return `<div class="ucard ${cls}" style="${style}"><div class="ucard__face">`
+  const stats = order.map((s) => `<span><em>${s.label}</em>${card.stats?.[s.key] ?? NO_STAT}</span>`).join('');
+  return `<div class="ucard ${cls}" style="${style}"><div class="ucard__face"><i class="ucard__plyr" aria-hidden="true"></i>`
     + `<div class="ucard__ovr"><b>${card.ovr}</b><span>${esc(card.pos[0])}</span></div>`
-    + `<div class="ucard__name">${esc(shortName(card.name))}</div>`
+    + `<div class="ucard__name${nameSize(card.name)}">${esc(card.name)}</div>`
     + `<div class="ucard__stats">${stats}</div></div></div>`;
 }
 
-// Cards print a surname: "Erling Haaland" -> "Haaland". A particle stays with
-// it ("Virgil van Dijk" -> "van Dijk"), and so does a short last word.
-const PARTICLES = new Set(['van', 'de', 'da', 'das', 'do', 'dos', 'di', 'del', 'della', 'der', 'den', 'le', 'la', 'ter', 'ten', 'von', 'el', 'al', 'bin', 'mac']);
-export function shortName(name) {
-  const parts = String(name).trim().split(/\s+/);
-  if (parts.length < 2) return name;
-  let i = parts.length - 1;
-  while (i > 0 && PARTICLES.has(parts[i - 1].toLowerCase())) i--;
-  if (i === parts.length - 1 && parts[i].length <= 3) i--;
-  return parts.slice(i).join(' ');
-}
+// The name prints as the card prints it: the books and cards show a surname,
+// sometimes two words of one ("Martínez Quarta"), and that is what the sheet
+// records, so nothing is cut. A long one steps down a size, as the game's does.
+const nameSize = (name) => { const n = String(name).length; return n > 15 ? ' ucard__name--xl' : n > 11 ? ' ucard__name--l' : ''; };
 
 // A plain two-colour shield for a club. We don't draw real crests; the
 // colours are picked from the name, so a club always gets the same pair.
@@ -98,7 +91,7 @@ export function crest(club) {
 // The standings row: crest, club over name, OVR hex, position, three stats.
 export function cardRow(card, { on = false, attrs = '' } = {}) {
   const defs = statsFor(card.pos[0]).slice(0, 3);
-  const stats = defs.map((s) => `<span class="lstat"><span>${s.label}</span><b>${card.stats?.[s.key] ?? '–'}</b></span>`).join('');
+  const stats = defs.map((s) => `<span class="lstat"><span>${s.label}</span><b>${card.stats?.[s.key] ?? NO_STAT}</b></span>`).join('');
   return `<div class="lrow${on ? ' is-on' : ''}" ${attrs}>${crest(card.club)}`
     + `<span class="lrow__name"><small>${esc(card.club || card.nation || '—')}</small><b>${esc(card.name)}</b></span>`
     + `${hexchip(card.ovr, card)}<span class="lrow__pos">${esc(card.pos[0])}</span>${stats}</div>`;

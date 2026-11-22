@@ -9,13 +9,15 @@ import { rarity as rarityOf, isSpecial } from '../data/rarities.js';
 export const slugPart = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '')
   .replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-// A card's address: the player, then the special rarity it belongs to. Two
-// versions that would share one take the OVR as well, and then the position.
-// "Test Striker" Team of the Week -> test-striker-team-of-the-week.
+// A card's address: the player, the club, then the special set it belongs to.
+// The Collection Book prints surnames only, so the club is always part of it:
+// "Test Striker" of Test FC, Team of the Week -> test-striker-test-fc-team-of-the-week.
+// Two cards that would still share one take the OVR as well, then the position,
+// then their slot in the club's book.
 export function cardSlugs(list) {
   const groups = {};
   for (const c of list || []) {
-    const key = slugPart(c.name) + (isSpecial(c.rarity) ? '-' + c.rarity : '');
+    const key = [slugPart(c.name), slugPart(c.club), isSpecial(c.rarity) ? c.rarity : ''].filter(Boolean).join('-');
     (groups[key] = groups[key] || []).push(c);
   }
   const out = {};
@@ -24,9 +26,9 @@ export function cardSlugs(list) {
       let slug = key || 'card';
       if (group.length > 1) {
         slug += '-' + c.ovr;
-        if (group.filter((x) => x.ovr === c.ovr).length > 1) slug += '-' + slugPart(c.pos[0]);
-        // Same player, rating and position twice: the quality is all that is left.
-        if (group.filter((x) => x.ovr === c.ovr && x.pos[0] === c.pos[0]).length > 1) slug += '-' + c.quality;
+        const same = group.filter((x) => x.ovr === c.ovr);
+        if (same.length > 1) slug += '-' + slugPart(c.pos[0]);
+        if (same.filter((x) => x.pos[0] === c.pos[0]).length > 1 && c.slot) slug += '-' + c.slot;
       }
       out[c.id] = slug;
     }
