@@ -83,7 +83,9 @@ node --test tests/*.test.mjs   node tools/voice-check.mjs
 node tools/browser-check.mjs
 ```
 
-(`npm run check` runs all five.) After changing the mark, the tokens or the
+(`npm run check` runs all five. The browser check opens a fixed sample of card
+pages, since they share one template; after a change to the card page itself,
+also run `node tools/browser-check.mjs --all-cards`.) After changing the mark, the tokens or the
 social card, also run `node tools/make-images.mjs` and look at what it wrote.
 
 Then look at the change in a browser, twice: at 1280 wide and at 390 wide,
