@@ -8,6 +8,32 @@ a release.
 
 ## [Unreleased]
 
+## [0.4.0] - Unreleased
+
+### Added
+
+- **Every special set the game lists now has its own card.** European
+  Evolutions, Game Changers, Harvest, Mavericks, Most Wanted, Screamers,
+  Shapeshifters, Super Heroes, Team of the Week, Transfer Stars, Veterans and
+  Weekend League each get a card face drawn for the site, in colours measured
+  from the set's card in the game. None of the game's art is used.
+- **Their chips match.** Each of those sets, and New Season, carries a mark
+  from its card on its chip, over the same chip colours as before.
+
+### Changed
+
+- **A card's quality now follows its OVR, the way the game sets it.** Bronze
+  is 45 to 64, Silver 65 to 74, Gold 75 to 82 and Gold Rare 83 to 99, as the
+  market's rating filter prints them. The Quality choice is gone from the card
+  form, and a quality column in a CSV is ignored.
+- **Saved cards:** nothing is lost. A card in My cards that was saved with a
+  different quality shows the one its OVR sets the next time the site opens.
+
+### Removed
+
+- **Elite and Premium are no longer card qualities.** They belong to packs. A
+  PTC requirement saved with either one no longer matches any card.
+
 ## [0.3.0] - Unreleased
 
 ### Changed

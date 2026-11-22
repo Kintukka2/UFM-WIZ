@@ -150,7 +150,7 @@ function toolbar(n) {
   </div>`;
 }
 
-const CSV_HINT = `One card per row, under a header row that names the columns. <b>name</b>, <b>ovr</b> and <b>position</b> are needed; the rest can be blank. A position can hold several, separated by spaces, primary first: <code>CM CAM</code>. Quality and rarity take the name on the card (Gold Rare, Team of the Week), and sellable takes yes or no.`;
+const CSV_HINT = `One card per row, under a header row that names the columns. <b>name</b>, <b>ovr</b> and <b>position</b> are needed; the rest can be blank. A position can hold several, separated by spaces, primary first: <code>CM CAM</code>. Rarity takes the name on the card (Team of the Week), and sellable takes yes or no. Quality follows the OVR, so that column can stay blank.`;
 
 function csvDetails() {
   return `<details class="pl-csv"><summary>The CSV format</summary><p>${CSV_HINT}</p><p class="pl-csvcols"><code>${CSV_COLUMNS.join(',')}</code></p></details>`;

@@ -177,6 +177,8 @@ There are 12: **GK, CB, LB, RB, CDM, CM, CAM, LM, RM, LW, RW, ST**.
 ### 6.3 Quality tiers [APK]
 **Bronze → Silver → Gold → Gold Rare → Elite → Premium**. The base cards come in bronze, silver and gold artwork, and the store screenshots show black-and-gold rares.
 
+Seen in the game, Nov 2026: a player card has only the first four, set by its OVR. The market's rating filter prints the bands: Bronze 45 to 64, Silver 65 to 74, Gold 75 to 82, Gold Rare 83 to 99. Elite and Premium belong to packs.
+
 ### 6.4 Special rarities (54 defined in 27.4.0) [APK]
 
 | Theme | Rarities |

@@ -49,7 +49,7 @@ if either output is stale, so a sheet edit without a rebuild can't ship.
 | `name` | yes | The name the card prints, accents and all: `Ünïcode Ñame` keeps its marks. The page address drops them. |
 | `ovr` | for the database | The big number top left, 1 to 99. Blank if you can't see it: the row waits in pending. |
 | `position` | for the database | The code under the OVR, first. Other positions the profile shows follow, separated by spaces: `CM CAM`. |
-| `quality` | no | `Bronze`, `Silver`, `Gold`, `Gold Rare`, `Elite` or `Premium`. Read it off the card's metal; the game doesn't set it from the OVR (a 76 can be silver and a 77 gold). Blank means Gold. |
+| `quality` | no | Leave it blank. The OVR sets it, as the market's rating filter prints: Bronze 45 to 64, Silver 65 to 74, Gold 75 to 82, Gold Rare 83 to 99. Anything written here is ignored. |
 | `rarity` | no | The special set's name as the card shows it, for example `Team of the Week`, `Screamers`, `Most Wanted`. Blank for a base card. The Halloween set shows as `Matchday`, and `Kick-Off` shows as `European Evolutions`: write what the card says. |
 | `nation`, `league`, `club` | no | As printed. A club the game gives a stand-in name ("Manchester Red") keeps that name. |
 | `age` | no | Only if the profile shows it. |

@@ -75,3 +75,33 @@ test('the build writes the same pages whatever day it runs', async () => {
   assert.equal(late.length, early.length);
   early.forEach((f, i) => assert.equal(late[i].content, f.content, `${f.rel} depends on the day it was built`));
 });
+
+test('the set stylesheet is what the drawing tool writes, on the site and in the brand folder', async () => {
+  const { stylesheet, SETS } = await import('../tools/make-sets.mjs');
+  const css = stylesheet();
+  assert.equal(await readFile(join(SITE, 'css/sets.css'), 'utf8'), css, 'site/css/sets.css is stale: run node tools/make-sets.mjs');
+  assert.equal(await readFile(join(ROOT, 'brand/ufmwiz-sets.css'), 'utf8'), css, 'brand/ufmwiz-sets.css is stale: run node tools/make-sets.mjs');
+  // every set the data marks as drawn has a chip motif, and a face unless it keeps its own card
+  const { RARITIES } = await import('../site/js/data/rarities.js');
+  assert.deepEqual(RARITIES.filter((r) => r.art).map((r) => r.id).sort(), SETS.map((s) => s.id).sort());
+  for (const s of SETS) {
+    assert.ok(css.includes(`.hexchip--set-${s.id}, .rchip--set-${s.id} {`), `${s.id} has no chip motif`);
+    assert.equal(css.includes(`.ucard--set-${s.id} {`), !s.chipOnly, `${s.id} card face`);
+  }
+  // drawn here, never taken: no picture file and nothing fetched (a drawing may point at its own gradient)
+  assert.doesNotMatch(css, /url\((?!"data:image\/svg\+xml,|%23)/);
+  assert.doesNotMatch(css, /https?:\/\/(?!www\.w3\.org\/2000\/svg)/);
+});
+
+test('a card of a drawn set wears the set, and its chip keeps the measured pair', async () => {
+  const { shirtCard, hexchip, rarityChip } = await import('../site/js/ui/card.js');
+  const card = { name: 'Test Striker', ovr: 88, pos: ['ST'], quality: 'rare', rarity: 'team-of-the-week', stats: {} };
+  assert.match(shirtCard(card), /class="ucard ucard--set ucard--set-team-of-the-week"/);
+  assert.match(hexchip(88, card), /hexchip--set-team-of-the-week" style="--fill:#121C1D;--rim:#E9CF33;/);
+  assert.match(rarityChip('team-of-the-week'), /rchip--set-team-of-the-week" style="--fill:#121C1D;--rim:#E9CF33;/);
+  // a set with no drawing yet falls back to its chip pair, and New Season keeps its own card
+  assert.match(shirtCard({ ...card, rarity: 'christmas' }), /ucard--special/);
+  assert.doesNotMatch(hexchip(88, { ...card, rarity: 'christmas' }), /--set-/);
+  assert.match(shirtCard({ ...card, rarity: 'new-season' }), /ucard--season/);
+  assert.match(hexchip(88, { ...card, rarity: 'new-season' }), /hexchip--set-new-season/);
+});

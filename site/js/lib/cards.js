@@ -8,16 +8,15 @@
 //     sellable, source: 'mine' | 'db' }
 
 import { POSITIONS, statsFor } from '../data/football.js';
-import { QUALITIES, RARITIES } from '../data/rarities.js';
+import { RARITIES, qualityFor } from '../data/rarities.js';
 import { uid, load, save } from './util.js';
 
-const QUALITY_IDS = new Set(QUALITIES.map((q) => q.id));
 const RARITY_IDS = new Set(RARITIES.map((r) => r.id));
 const STAT_KEYS = ['pac', 'sho', 'pas', 'drb', 'def', 'phy', 'div', 'han', 'kck', 'ref', 'spd', 'gkp'];
 
 const slug = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-// Accept a rarity or quality by id or by the name the card shows.
+// Accept a rarity by id or by the name the card shows.
 function pick(value, ids, list) {
   const v = slug(value);
   if (ids.has(v)) return v;
@@ -37,8 +36,8 @@ export function normalize(raw) {
   const badPos = pos.filter((p) => !POSITIONS.includes(p));
   if (!pos.length) errors.push('A card needs a position.');
   if (badPos.length) errors.push(`Unknown position: ${badPos.join(', ')}. Use ${POSITIONS.join(', ')}.`);
-  const quality = raw.quality ? pick(raw.quality, QUALITY_IDS, QUALITIES) : 'gold';
-  if (!quality) errors.push(`Unknown quality "${raw.quality}".`);
+  // Quality follows the OVR, so whatever a file or an older save says is dropped.
+  const quality = qualityFor(ovr);
   const rarity = raw.rarity ? pick(raw.rarity, RARITY_IDS, RARITIES) : 'normal';
   if (!rarity) errors.push(`Unknown rarity "${raw.rarity}".`);
   const stats = {};
@@ -54,7 +53,7 @@ export function normalize(raw) {
   const card = {
     id: raw.id || uid(),
     name, ovr, pos: pos.filter((p) => POSITIONS.includes(p)),
-    quality: quality || 'gold', rarity: rarity || 'normal',
+    quality, rarity: rarity || 'normal',
     nation: String(raw.nation ?? '').trim(),
     league: String(raw.league ?? '').trim(),
     club: String(raw.club ?? '').trim(),

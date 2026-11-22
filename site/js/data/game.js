@@ -18,6 +18,15 @@ export const WEEKEND_LEAGUE = {
   qpPerWin: null,
 };
 
+// The OVR bands of the four base qualities, as the market's rating filter
+// prints them (seen Nov 2026). A special card keeps its own design at any OVR.
+export const CARD_QUALITY = {
+  bronze: [45, 64],   // game
+  silver: [65, 74],   // game
+  gold: [75, 82],     // game
+  rare: [83, 99],     // game
+};
+
 export const CHALLENGE_MATCH = { win: 100, loss: 30 }; // game
 
 // Chemistry, from the game's help text: starters who share a nationality, a

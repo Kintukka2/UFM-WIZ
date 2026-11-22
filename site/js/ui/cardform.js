@@ -3,7 +3,7 @@
 
 import { esc } from '../lib/util.js';
 import { POSITIONS, statsFor } from '../data/football.js';
-import { QUALITIES, RARITIES } from '../data/rarities.js';
+import { RARITIES } from '../data/rarities.js';
 import { normalize } from '../lib/cards.js';
 
 const opt = (v, label, sel) => `<option value="${esc(v)}"${sel ? ' selected' : ''}>${esc(label)}</option>`;
@@ -17,7 +17,6 @@ export function cardFormHTML(card = {}) {
     <label class="lbl"><span>OVR</span><input class="field" name="ovr" type="number" min="1" max="99" inputmode="numeric" value="${esc(card.ovr ?? '')}" required></label>
     <label class="lbl"><span>Position</span><select class="field" name="pos0">${POSITIONS.map((p) => opt(p, p, p === pos)).join('')}</select></label>
     <label class="lbl"><span>Other positions <small>optional</small></span><input class="field" name="posx" value="${esc(others)}" placeholder="e.g. CAM RW"></label>
-    <label class="lbl"><span>Quality</span><select class="field" name="quality">${QUALITIES.map((q) => opt(q.id, q.name, q.id === (card.quality || 'gold'))).join('')}</select></label>
     <label class="lbl" style="grid-column: span 2"><span>Rarity</span><select class="field" name="rarity">${RARITIES.map((r) => opt(r.id, r.name, r.id === (card.rarity || 'normal'))).join('')}</select></label>
     <label class="lbl"><span>Nationality</span><input class="field" name="nation" value="${esc(card.nation)}" placeholder="e.g. Spain"></label>
     <label class="lbl"><span>League</span><input class="field" name="league" value="${esc(card.league)}" placeholder="e.g. Spain 1"></label>
@@ -52,7 +51,7 @@ export function readCardForm(form, id) {
   const raw = {
     id, name: f.name.value, ovr: f.ovr.value,
     pos: [f.pos0.value, ...f.posx.value.split(/[\s,/]+/)],
-    quality: f.quality.value, rarity: f.rarity.value,
+    rarity: f.rarity.value,
     nation: f.nation.value, league: f.league.value, club: f.club.value, age: f.age.value,
     sellable: f.sellable.checked, stats: {},
   };

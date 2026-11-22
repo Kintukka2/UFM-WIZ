@@ -88,3 +88,13 @@ test('a backup carries every key and restores through the migrations', () => {
   assert.throws(() => readBackup({ format: 'something-else', data: {} }), /not a UFMWiz backup/);
   assert.throws(() => readBackup({ format: BACKUP_FORMAT, schema: SCHEMA + 1, data: {} }), /newer version/);
 });
+
+test('cards saved with a hand-picked quality come back with the one their OVR sets', async () => {
+  fresh({ [P + 'mycards']: JSON.stringify([
+    { id: 'a', name: 'Test Striker', ovr: 86, pos: ['ST'], quality: 'gold', rarity: 'normal' },
+    { id: 'b', name: 'Test Back', ovr: 70, pos: ['LB'], quality: 'elite', rarity: 'normal' },
+  ]) });
+  migrateStorage();
+  const { myCards } = await import('../site/js/lib/cards.js');
+  assert.deepEqual(myCards.all().map((c) => [c.id, c.quality]), [['a', 'rare'], ['b', 'silver']]);
+});
