@@ -11,6 +11,7 @@
     "images": "node tools/make-images.mjs",
     "check": "node tools/build.mjs && node tools/sw.mjs --check && node --test tests/*.test.mjs && node tools/voice-check.mjs && node tools/browser-check.mjs",
     "serve": "python3 -m http.server 8080 --directory site",
-    "cards": "node tools/build-cards.mjs"
+    "cards": "node tools/build-cards.mjs",
+    "sets": "node tools/make-sets.mjs"
   }
 }

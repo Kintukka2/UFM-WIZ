@@ -38,6 +38,7 @@ const PRECACHE = [
   'css/help.css?v=0.4.0',
   'css/players.css?v=0.4.0',
   'css/ptc.css?v=0.4.0',
+  'css/sets.css?v=0.4.0',
   'css/site.css?v=0.4.0',
   'css/squad.css?v=0.4.0',
   'css/tokens.css?v=0.4.0',

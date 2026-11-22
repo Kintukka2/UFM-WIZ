@@ -685,6 +685,9 @@ code {
    RARITIES
    ============================================================ */
 .rargrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 14px 10px; }
+.setgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 22px 16px; margin-top: 18px; }
+.setfig { margin: 0; }
+.setfig figcaption { display: flex; align-items: center; gap: 10px; margin-top: 10px; font-family: var(--display); font-size: 17px; letter-spacing: .03em; line-height: 1.05; }
 .rar { margin: 0; display: flex; align-items: center; gap: 10px; min-width: 0; }
 .rar figcaption { font-family: var(--display); font-size: 17px; letter-spacing: .03em; line-height: 1.05; min-width: 0; }
 .rar figcaption code { display: block; background: none; border: 0; padding: 0; font-size: 10px; color: var(--ink-3); margin-top: 3px; }
@@ -790,6 +793,7 @@ footer b { color: var(--ink-2); font-weight: 700; }
   * { animation: none !important; transition: none !important; }
 }
 </style>
+<link rel="stylesheet" href="ufmwiz-sets.css">
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
@@ -1547,6 +1551,76 @@ footer b { color: var(--ink-2); font-weight: 700; }
         <p style="margin-top:20px">The game tells specials apart by their illustrated art, which we can't use. The chip
           pair is how we tell them apart instead, so <strong>never recolour a rarity's chip</strong>. The pair is the
           set's identity.</p>
+
+        <h3 style="margin-top:34px">Special sets, drawn</h3>
+        <p class="lede">The game tells its special sets apart with illustrated art, and that art stays in the game. For each set the
+          rarity filter lists, we draw our own card face on the same subject, in colours measured from the set's card: a tactics
+          board for Game Changers, an ear of wheat for Harvest, a sunset for Most Wanted. The chip carries one stroke of the same
+          picture over its measured fill, inside its measured rim. New Season keeps the card it already has and gains the chip.
+          A set without a drawing falls back to its chip pair on a plain face.</p>
+        <div class="setgrid">
+<figure class="setfig"><article class="ucard ucard--set ucard--set-european-evolutions"><div class="ucard__face">
+            <div class="ucard__ovr"><b>84</b><span>ST</span></div>
+            <div class="ucard__name">Striker</div>
+            <div class="ucard__stats"><span><em>PAC</em>88</span><span><em>DRB</em>87</span><span><em>SHO</em>86</span><span><em>DEF</em>45</span><span><em>PAS</em>81</span><span><em>PHY</em>78</span></div>
+          </div></article><figcaption><span class="hexchip hexchip--set-european-evolutions" style="--rim:#BD51D9;--fill:#004FD9;--chip-ink:#FFFFFF"><i>84</i></span>European Evolutions</figcaption></figure>
+<figure class="setfig"><article class="ucard ucard--set ucard--set-game-changers"><div class="ucard__face">
+            <div class="ucard__ovr"><b>85</b><span>ST</span></div>
+            <div class="ucard__name">Striker</div>
+            <div class="ucard__stats"><span><em>PAC</em>88</span><span><em>DRB</em>87</span><span><em>SHO</em>86</span><span><em>DEF</em>45</span><span><em>PAS</em>81</span><span><em>PHY</em>78</span></div>
+          </div></article><figcaption><span class="hexchip hexchip--set-game-changers" style="--rim:#D0AF21;--fill:#1E4C33;--chip-ink:#FFFFFF"><i>85</i></span>Game Changers</figcaption></figure>
+<figure class="setfig"><article class="ucard ucard--set ucard--set-harvest"><div class="ucard__face">
+            <div class="ucard__ovr"><b>86</b><span>ST</span></div>
+            <div class="ucard__name">Striker</div>
+            <div class="ucard__stats"><span><em>PAC</em>88</span><span><em>DRB</em>87</span><span><em>SHO</em>86</span><span><em>DEF</em>45</span><span><em>PAS</em>81</span><span><em>PHY</em>78</span></div>
+          </div></article><figcaption><span class="hexchip hexchip--set-harvest" style="--rim:#DEB659;--fill:#341806;--chip-ink:#FFFFFF"><i>86</i></span>Harvest</figcaption></figure>
+<figure class="setfig"><article class="ucard ucard--set ucard--set-mavericks"><div class="ucard__face">
+            <div class="ucard__ovr"><b>87</b><span>ST</span></div>
+            <div class="ucard__name">Striker</div>
+            <div class="ucard__stats"><span><em>PAC</em>88</span><span><em>DRB</em>87</span><span><em>SHO</em>86</span><span><em>DEF</em>45</span><span><em>PAS</em>81</span><span><em>PHY</em>78</span></div>
+          </div></article><figcaption><span class="hexchip hexchip--set-mavericks" style="--rim:#9C9C9C;--fill:#191B1C;--chip-ink:#FFFFFF"><i>87</i></span>Mavericks</figcaption></figure>
+<figure class="setfig"><article class="ucard ucard--set ucard--set-most-wanted"><div class="ucard__face">
+            <div class="ucard__ovr"><b>88</b><span>ST</span></div>
+            <div class="ucard__name">Striker</div>
+            <div class="ucard__stats"><span><em>PAC</em>88</span><span><em>DRB</em>87</span><span><em>SHO</em>86</span><span><em>DEF</em>45</span><span><em>PAS</em>81</span><span><em>PHY</em>78</span></div>
+          </div></article><figcaption><span class="hexchip hexchip--set-most-wanted" style="--rim:#DB748B;--fill:#121C1D;--chip-ink:#FFFFFF"><i>88</i></span>Most Wanted</figcaption></figure>
+<figure class="setfig"><article class="ucard ucard--set ucard--set-screamers"><div class="ucard__face">
+            <div class="ucard__ovr"><b>89</b><span>ST</span></div>
+            <div class="ucard__name">Striker</div>
+            <div class="ucard__stats"><span><em>PAC</em>88</span><span><em>DRB</em>87</span><span><em>SHO</em>86</span><span><em>DEF</em>45</span><span><em>PAS</em>81</span><span><em>PHY</em>78</span></div>
+          </div></article><figcaption><span class="hexchip hexchip--set-screamers" style="--rim:#424169;--fill:#3B1A3A;--chip-ink:#FFFFFF"><i>89</i></span>Screamers</figcaption></figure>
+<figure class="setfig"><article class="ucard ucard--set ucard--set-shapeshifters"><div class="ucard__face">
+            <div class="ucard__ovr"><b>90</b><span>ST</span></div>
+            <div class="ucard__name">Striker</div>
+            <div class="ucard__stats"><span><em>PAC</em>88</span><span><em>DRB</em>87</span><span><em>SHO</em>86</span><span><em>DEF</em>45</span><span><em>PAS</em>81</span><span><em>PHY</em>78</span></div>
+          </div></article><figcaption><span class="hexchip hexchip--set-shapeshifters" style="--rim:#8BAABD;--fill:#103E3B;--chip-ink:#FFFFFF"><i>90</i></span>Shapeshifters</figcaption></figure>
+<figure class="setfig"><article class="ucard ucard--set ucard--set-super-heroes"><div class="ucard__face">
+            <div class="ucard__ovr"><b>91</b><span>ST</span></div>
+            <div class="ucard__name">Striker</div>
+            <div class="ucard__stats"><span><em>PAC</em>88</span><span><em>DRB</em>87</span><span><em>SHO</em>86</span><span><em>DEF</em>45</span><span><em>PAS</em>81</span><span><em>PHY</em>78</span></div>
+          </div></article><figcaption><span class="hexchip hexchip--set-super-heroes" style="--rim:#9F9F9F;--fill:#0B2040;--chip-ink:#FFFFFF"><i>91</i></span>Super Heroes</figcaption></figure>
+<figure class="setfig"><article class="ucard ucard--set ucard--set-team-of-the-week"><div class="ucard__face">
+            <div class="ucard__ovr"><b>92</b><span>ST</span></div>
+            <div class="ucard__name">Striker</div>
+            <div class="ucard__stats"><span><em>PAC</em>88</span><span><em>DRB</em>87</span><span><em>SHO</em>86</span><span><em>DEF</em>45</span><span><em>PAS</em>81</span><span><em>PHY</em>78</span></div>
+          </div></article><figcaption><span class="hexchip hexchip--set-team-of-the-week" style="--rim:#E9CF33;--fill:#121C1D;--chip-ink:#FFFFFF"><i>92</i></span>Team of the Week</figcaption></figure>
+<figure class="setfig"><article class="ucard ucard--set ucard--set-transfer-stars"><div class="ucard__face">
+            <div class="ucard__ovr"><b>93</b><span>ST</span></div>
+            <div class="ucard__name">Striker</div>
+            <div class="ucard__stats"><span><em>PAC</em>88</span><span><em>DRB</em>87</span><span><em>SHO</em>86</span><span><em>DEF</em>45</span><span><em>PAS</em>81</span><span><em>PHY</em>78</span></div>
+          </div></article><figcaption><span class="hexchip hexchip--set-transfer-stars" style="--rim:#4DEDD8;--fill:#011529;--chip-ink:#FFFFFF"><i>93</i></span>Transfer Stars</figcaption></figure>
+<figure class="setfig"><article class="ucard ucard--set ucard--set-veterans"><div class="ucard__face">
+            <div class="ucard__ovr"><b>94</b><span>ST</span></div>
+            <div class="ucard__name">Striker</div>
+            <div class="ucard__stats"><span><em>PAC</em>88</span><span><em>DRB</em>87</span><span><em>SHO</em>86</span><span><em>DEF</em>45</span><span><em>PAS</em>81</span><span><em>PHY</em>78</span></div>
+          </div></article><figcaption><span class="hexchip hexchip--set-veterans" style="--rim:#C89F6E;--fill:#584022;--chip-ink:#FFFFFF"><i>94</i></span>Veterans</figcaption></figure>
+<figure class="setfig"><article class="ucard ucard--set ucard--set-weekend-league"><div class="ucard__face">
+            <div class="ucard__ovr"><b>95</b><span>ST</span></div>
+            <div class="ucard__name">Striker</div>
+            <div class="ucard__stats"><span><em>PAC</em>88</span><span><em>DRB</em>87</span><span><em>SHO</em>86</span><span><em>DEF</em>45</span><span><em>PAS</em>81</span><span><em>PHY</em>78</span></div>
+          </div></article><figcaption><span class="hexchip hexchip--set-weekend-league" style="--rim:#ABC96B;--fill:#121C1D;--chip-ink:#FFFFFF"><i>95</i></span>Weekend League</figcaption></figure>
+<figure class="setfig"><figcaption><span class="hexchip hexchip--set-new-season" style="--rim:#D1BD9D;--fill:#1F1F1F;--chip-ink:#FFFFFF"><i>90</i></span>New Season</figcaption></figure>
+        </div>
       </div>
     </section>
 

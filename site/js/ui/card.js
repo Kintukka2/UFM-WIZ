@@ -25,9 +25,12 @@ export function chipFor(card) {
   return { fill: c.fill, rim: c.rim, ink: lum(c.fill) > 0.4 ? '#1B1609' : '#FFFFFF', name: (r.fill ? r : qualityOf(card.quality)).name };
 }
 
+// The class that puts a drawn set's motif on a chip, if the set has one.
+const setChip = (kind, id) => (rarityOf(id).art ? ` ${kind}--set-${id}` : '');
+
 export function hexchip(value, card, cls = '') {
   const c = card ? chipFor(card) : { fill: '#E6D687', rim: '#D8BA68', ink: '#1B1609' };
-  return `<span class="hexchip ${cls}" style="--fill:${c.fill};--rim:${c.rim};--chip-ink:${c.ink}"><i>${esc(value)}</i></span>`;
+  return `<span class="hexchip ${cls}${card ? setChip('hexchip', card.rarity) : ''}" style="--fill:${c.fill};--rim:${c.rim};--chip-ink:${c.ink}"><i>${esc(value)}</i></span>`;
 }
 
 // A rarity chip with its name, for filters, legends and rows.
@@ -35,7 +38,7 @@ export function rarityChip(id, label = true) {
   const r = rarityOf(id);
   if (!r.fill) return label ? '<span class="rchip rchip--none">Normal</span>' : '';
   const ink = lum(r.fill) > 0.4 ? '#1B1609' : '#FFFFFF';
-  return `<span class="rchip" style="--fill:${r.fill};--rim:${r.rim};--chip-ink:${ink}" title="${esc(r.name)}"><i></i>${label ? esc(r.name) : ''}</span>`;
+  return `<span class="rchip${setChip('rchip', id)}" style="--fill:${r.fill};--rim:${r.rim};--chip-ink:${ink}" title="${esc(r.name)}"><i></i>${label ? esc(r.name) : ''}</span>`;
 }
 
 const SILHOUETTE = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4.3"/><path d="M3.4 22.5c0-5.2 3.9-8.4 8.6-8.4s8.6 3.2 8.6 8.4z"/></svg>';
@@ -43,6 +46,7 @@ const SILHOUETTE = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" 
 function metal(card) {
   const r = rarityOf(card.rarity);
   if (card.rarity === 'new-season') return { cls: 'ucard--season', style: '' };
+  if (r.art) return { cls: `ucard--set ucard--set-${r.id}`, style: '' };
   if (r.fill) {
     const ink = lum(r.fill) > 0.4 ? 'var(--ufm-ink-card)' : '#FFFFFF';
     const m = `linear-gradient(-8deg, transparent 0 64%, ${r.rim} 64% 66.5%, transparent 66.5% 70%, ${r.rim} 70% 71.5%, transparent 71.5%), linear-gradient(172deg, ${shade(r.fill, 0.18)} 0%, ${r.fill} 48%, ${shade(r.fill, -0.35)} 100%)`;

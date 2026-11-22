@@ -126,6 +126,7 @@ function page({ route, params = {}, path, base, title, desc, cards }) {
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,400;0,500;0,700;1,700&family=Sofia+Sans+Extra+Condensed:wght@700&display=swap">
 <link rel="stylesheet" href="css/tokens.css?v=${V}">
 <link rel="stylesheet" href="css/ufm.css?v=${V}">
+<link rel="stylesheet" href="css/sets.css?v=${V}">
 <link rel="stylesheet" href="css/site.css?v=${V}">
 <link rel="stylesheet" href="css/views.css?v=${V}">
 <link rel="stylesheet" href="css/help.css?v=${V}">

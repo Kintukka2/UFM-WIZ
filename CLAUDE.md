@@ -52,6 +52,9 @@ State the version and the tag to put on the merge commit alongside it.
   board per screen, one bib per figure, never a card, an OVR or gold on it.
 - Advice inverts: tooltips, help and the tour are white boxes with dark text.
 - Hexagons hold a number about a player or a squad, and nothing else.
+- A special set's card face and chip motif are our own drawings, in colours
+  measured from the set's card. Change one in `tools/make-sets.mjs` and run it;
+  never edit the set stylesheet by hand, and never trace or copy the game's art.
 
 ## Writing
 

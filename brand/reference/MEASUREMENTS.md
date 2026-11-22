@@ -147,6 +147,27 @@ Rendered: active tab `#F3D87F` with text `#444230`; inactive tab `#54452E` with 
 | `world26evolutions` | `#34548E` | `#EEEEBB` |
 | `world26weekly` | `#0A0A08` | `#2E6EBB` |
 
+## Special sets (rendered, a player's screenshots of the market's rarity filter, 21 Nov 2026)
+
+The filter lists thirteen special sets beside Normal: European Evolutions, Game Changers, Harvest, Mavericks, Most Wanted, New Season, Screamers, Shapeshifters, Super Heroes, Team of the Week, Transfer Stars, Weekend League and Veterans. Each thumbnail is about 200 px wide at 2404×1080. Ground: a seven-colour median cut of the middle of the card, and the median of a band down its centre. Marks: the most saturated fourteenth of the card, split by hue. Highlight: the brightest fortieth. Frame: the first four pixels in from the left edge, at mid-height, dark to light.
+
+The drawings in `tools/make-sets.mjs` use these values and nothing from the thumbnails themselves. New Season is not in the table: its card was measured from the build (Card frames, above).
+
+| Set | Ground | Marks | Frame |
+|---|---|---|---|
+| European Evolutions | `#62065D #400151 #140B58 #0B3788 #002352` | `#D61CC7 #2AAAF4 #0F58CB`, highlight `#BFE8FF` | `#5A0068 #F8E2FA` |
+| Game Changers | `#057C45 #046741 #07382D` | `#D4B959 #519E5A`, highlight `#F2EAA9` | `#94A430 #CAF297 #EEF9DC` |
+| Harvest | `#2C2719 #675523 #A97D21 #905D1E #44230D #2D1A0C` | `#E6B62B`, highlight `#F1D954` | `#4F3F1C #B4904A #FCF2BB` |
+| Mavericks | `#5E646A #41464A #222425 #1F2122` | `#A98727 #6A7078`, highlight `#D8C3B3` | `#303335 #484C52 #676668` |
+| Most Wanted | `#F3245E #F05A63 #E12D67 #96276C #591259 #240D4D #0B093B #07072D` | `#F8C8C2`, highlight `#FCE5E7` | `#290E36 #D44260 #E29BAE` |
+| Screamers | `#031D60 #142A61 #3A4F9F #4733C1 #3A2E92` | `#14515B #1E8D8A #0CBF93`, highlight `#2DB797` | `#211F39 #44546E #B0A4BE` |
+| Shapeshifters | `#3D3B7A #113D5A #23235E #2C5375 #115663 #1C8577 #1C6971` | `#2ADB9F` | `#226A66 #9FB2BA #D0DCE0` |
+| Super Heroes | `#2A8BBD #2379B5 #1A508D #0B2144` | `#2284C1`, highlight `#8F9BC2` | `#000000 #9E9E9E #F7F7F7` |
+| Team of the Week | `#7C7474 #41331D #262315 #130C07` | `#F6D911 #907E46 #B8A74C`, highlight `#FEFD37` | `#342102 #826E2B #F2E036` |
+| Transfer Stars | `#00101E #011F35 #012A34` | `#013742 #015B5F #02A99C #01D8C5`, highlight `#2BE6CA` | `#021417 #16B8CD #76E2E6` |
+| Veterans | `#EBDFD3 #E5D5C7 #D3BDA8 #E9DDD6` | `#DBAF72 #CE9C5B #B77941 #977555 #79583A`, highlight `#FAEAD2` | `#9E744C #C89B6C #E3BC8E` |
+| Weekend League | `#7E928A #435352 #1D2F28 #101B17 #010202` | `#77BF60 #46A54F #ABD470`, highlight `#BCDD95` | `#0D1610 #202E28 #7DA054` |
+
 ## Fonts (embedded name tables)
 
 | File | Family | Designer / foundry | Licence |
