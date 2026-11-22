@@ -12,9 +12,9 @@ a release.
 
 ### Added
 
-- **Two more Argentina 1 clubs in the card database.** Córdoba Navies and
-  Córdoba Red bring it to 390 cards across the league's first 14 books. Seven
-  of them carry their full stats.
+- **Twelve more Argentina 1 clubs in the card database.** Córdoba Navies to
+  Rosario Yellow bring it to 688 cards across the league's first 24 books.
+  Twelve of them carry their full stats.
 
 ## [0.5.1] - Unreleased
 

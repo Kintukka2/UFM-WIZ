@@ -9,7 +9,7 @@ league's book. A club counts as in once any of its base cards are.
 
 | League | Clubs in | Cards in | Pages in | Next to send |
 |---|---|---|---|---|
-| Argentina 1 | 14 of 30 | 390 | 1 to 50 | Florencio Varela Yellow, from page 51 |
+| Argentina 1 | 24 of 30 | 688 | 1 to 90 | Santa Fe Red White, from page 91 |
 
 Not started: Australia 1, Austria 1, Belgium 1, Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
@@ -31,17 +31,17 @@ Not started: Australia 1, Austria 1, Belgium 1, Brazil 1, Denmark 1, England 1, 
 | 12 | Córdoba Blue | 24 | 41 to 44 |
 | 13 | Córdoba Navies | 23 | 45 to 46 |
 | 14 | Córdoba Red | 26 | 47 to 50 |
-| 15 | Florencio Varela Yellow | | next, from page 51 |
-| 16 | Junín Green | |  |
-| 17 | La Plata Red | |  |
-| 18 | La Plata White | |  |
-| 19 | Lanús Maroon | |  |
-| 20 | Mar del Plata Yellow | |  |
-| 21 | Mendoza Navies | |  |
-| 22 | Riestra Black | |  |
-| 23 | Rosario Black Red | |  |
-| 24 | Rosario Yellow | |  |
-| 25 | Santa Fe Red White | |  |
+| 15 | Florencio Varela Yellow | 29 | 51 to 54 |
+| 16 | Junín Green | 32 | 55 to 58 |
+| 17 | La Plata Red | 30 | 59 to 62 |
+| 18 | La Plata White | 31 | 63 to 66 |
+| 19 | Lanús Maroon | 25 | 67 to 70 |
+| 20 | Mar del Plata Yellow | 30 | 71 to 74 |
+| 21 | Mendoza Navies | 28 | 75 to 78 |
+| 22 | Riestra Black | 31 | 79 to 82 |
+| 23 | Rosario Black Red | 32 | 83 to 86 |
+| 24 | Rosario Yellow | 30 | 87 to 90 |
+| 25 | Santa Fe Red White | | next, from page 91 |
 | 26 | Santiago White | |  |
 | 27 | Tucumán Blue | |  |
 | 28 | Victoria Blue | |  |
