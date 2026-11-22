@@ -12,7 +12,13 @@ import assert from 'node:assert/strict';
 import { serve, loadPlaywright } from '../tools/browser-check.mjs';
 import { writeServiceWorker } from '../tools/sw.mjs';
 import { SITE } from '../site/js/data/routes.js';
+import { readFile } from 'node:fs/promises';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
 import { POSTS } from '../site/js/data/posts.js';
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 const pw = loadPlaywright();
 const SHELL = `ufmwiz-shell-v${SITE.version}`;
@@ -22,6 +28,31 @@ test('the precache list matches the built site and its version', async () => {
   assert.equal(r.changed, false, 'site/sw.js is stale: run node tools/build.mjs');
   assert.equal(r.version, SITE.version);
   assert.ok(r.count > 20, `the worker precaches the whole shell (${r.count} entries)`);
+});
+
+test('card pages stay out of the precache, so it does not grow with the database', async () => {
+  const { precacheList } = await import('../tools/sw.mjs');
+  const list = await precacheList();
+  assert.ok(list.includes('ufm27/players/'), 'the players page is in');
+  assert.deepEqual(list.filter((p) => /^ufm27\/players\/[^/]+\/$/.test(p)), []);
+  assert.ok(list.includes('data/cards.json'), 'the card data is, so any card can be drawn offline');
+});
+
+test('the browser check samples card pages instead of opening every one', async () => {
+  const { pages, cardSample } = await import('../tools/browser-check.mjs');
+  const card = /^\/ufm27\/players\/[^/]+\/$/;
+  const few = (await pages()).filter((p) => card.test(p)).length;
+  const all = (await pages(undefined, { allCards: true })).filter((p) => card.test(p)).length;
+  assert.ok(few <= 20, `a sample (${few} of ${all})`);
+  // the sample covers every quality and set present, and the same data always gives the same one
+  const cards = [
+    { id: 'a', name: 'Test One', pos: ['ST'], quality: 'gold', rarity: 'normal', stats: {} },
+    { id: 'b', name: 'Test Two', pos: ['GK'], quality: 'silver', rarity: 'normal', stats: { div: 70 } },
+    { id: 'c', name: 'A Much Longer Test Name', pos: ['CB'], quality: 'gold', rarity: 'screamers', stats: {} },
+    { id: 'd', name: 'Test Four', pos: ['CB'], quality: 'gold', rarity: 'normal', stats: {} },
+  ];
+  assert.deepEqual([...cardSample(cards)].sort(), ['a', 'b', 'c']);
+  assert.deepEqual([...cardSample(cards)], [...cardSample(cards)]);
 });
 
 test('installed and offline', { skip: !pw && 'Playwright is not installed' }, async (t) => {
@@ -97,6 +128,14 @@ test('installed and offline', { skip: !pw && 'Playwright is not installed' }, as
       }
       const text = await page.textContent('main:not([hidden])');
       assert.ok(text.includes(POSTS[0].title.split(':')[0]), 'the post is the post, not a fallback');
+      // a card page never opened before is not in the cache, and still opens
+      const { cards } = JSON.parse(await readFile(join(ROOT, 'site/data/cards.json'), 'utf8'));
+      if (cards.length) {
+        const c = cards.at(-1);
+        const res = await page.goto(`${origin}/ufm27/players/${c.id}/`, { waitUntil: 'domcontentloaded' });
+        assert.equal(res?.status(), 200, 'an unvisited card page answers offline');
+        await page.waitForFunction((name) => document.querySelector('main:not([hidden]) .ucard__name')?.textContent === name, c.name, { timeout: 5000 });
+      }
     } finally {
       await context.setOffline(false);
     }

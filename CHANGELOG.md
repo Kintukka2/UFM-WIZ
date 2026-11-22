@@ -8,6 +8,17 @@ a release.
 
 ## [Unreleased]
 
+## [0.5.1] - Unreleased
+
+### Fixed
+
+- **The offline copy no longer grows with the card database.** It used to
+  download every card's page the first time the site opened, which would have
+  meant tens of thousands of pages once every club is in. Now it keeps a card
+  page the first time you open it, and with no connection the site draws any
+  other card from the card data, so every card still opens offline. Nothing
+  you have saved is affected.
+
 ## [0.5.0] - Unreleased
 
 ### Added

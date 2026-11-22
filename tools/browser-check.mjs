@@ -16,8 +16,12 @@
 //   node tools/browser-check.mjs --base http://localhost:8080
 //   node tools/browser-check.mjs --shots <dir>      also save a screenshot per page
 //
+//   node tools/browser-check.mjs --all-cards       every card page, not a sample
+//
 // Pages come from site/sitemap.xml, so a page the build writes is a page this
-// checks, plus the not-found page.
+// checks, plus the not-found page. Card pages are the exception: there is one
+// per card, all drawn by one template, so a fixed sample stands for them (see
+// cardSample) and the run stays the same length however big the database gets.
 
 import { createServer } from 'node:http';
 import { createReadStream, existsSync, statSync } from 'node:fs';
@@ -56,9 +60,33 @@ export function loadPlaywright() {
   try { return createRequire(import.meta.url)('playwright'); } catch { return null; }
 }
 
-export async function pages(root = ROOT) {
+const CARD_PAGE = /^\/ufm27\/players\/[^/]+\/$/;
+
+// The card pages that stand for the rest: the first of each quality, of each
+// set, a keeper and an outfield card, one with stats and one without, and the
+// longest name, the one most likely to break a line. Chosen from the card data
+// in its own order, so the same database always gives the same sample.
+export function cardSample(cards) {
+  const pick = new Map();
+  const take = (key, c) => { if (c && !pick.has(key)) pick.set(key, c.id); };
+  for (const c of cards) {
+    take('quality:' + c.quality, c);
+    take('rarity:' + c.rarity, c);
+    take(c.pos?.[0] === 'GK' ? 'keeper' : 'outfield', c);
+    take(Object.keys(c.stats || {}).length ? 'stats' : 'no stats', c);
+  }
+  take('longest name', [...cards].sort((a, b) => b.name.length - a.name.length || (a.id < b.id ? -1 : 1))[0]);
+  return new Set(pick.values());
+}
+
+export async function pages(root = ROOT, { allCards = false } = {}) {
   const xml = await readFile(join(root, 'sitemap.xml'), 'utf8');
-  const paths = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
+  let paths = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
+  if (!allCards) {
+    const { cards = [] } = JSON.parse(await readFile(join(root, 'data/cards.json'), 'utf8'));
+    const keep = cardSample(cards);
+    paths = paths.filter((p) => !CARD_PAGE.test(p) || keep.has(p.split('/')[3]));
+  }
   return [...paths, '/no-such-page/'];
 }
 
@@ -103,7 +131,7 @@ function findRunts() {
   return out;
 }
 
-export async function check({ base, shots = null, widths = [390, 1280], log = console.log } = {}) {
+export async function check({ base, shots = null, widths = [390, 1280], allCards = false, log = console.log } = {}) {
   const pw = loadPlaywright();
   if (!pw) throw new Error('Playwright is not installed: npm install --no-save playwright && npx playwright install chromium');
   let server = null;
@@ -111,7 +139,7 @@ export async function check({ base, shots = null, widths = [390, 1280], log = co
   const faults = [];
   const browser = await pw.chromium.launch();
   try {
-    const list = await pages();
+    const list = await pages(ROOT, { allCards });
     for (const width of widths) {
       const ctx = await browser.newContext({ viewport: { width, height: 900 }, serviceWorkers: 'block' });
       const page = await ctx.newPage();
@@ -149,10 +177,10 @@ export async function check({ base, shots = null, widths = [390, 1280], log = co
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const arg = (name) => { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : null; };
-  const faults = await check({ base: arg('--base'), shots: arg('--shots') });
+  const faults = await check({ base: arg('--base'), shots: arg('--shots'), allCards: process.argv.includes('--all-cards') });
   if (faults.length) {
     console.error(`browser-check: ${faults.length} to fix\n  ${faults.join('\n  ')}`);
     process.exit(1);
   }
-  console.log('browser-check: every page clean at 390 and 1280');
+  console.log(`browser-check: every page clean at 390 and 1280${process.argv.includes('--all-cards') ? ', every card page included' : ''}`);
 }

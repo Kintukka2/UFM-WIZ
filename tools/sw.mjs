@@ -19,6 +19,10 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'site');
 // card, host config and the worker itself.
 const SKIP = /^(sw\.js|og\.png|robots\.txt|sitemap\.xml|_headers|_redirects|[0-9a-f]{32}\.txt)$/;
 const ICON = /^(icon[\w-]*\.(png|svg)|apple-touch-icon\.png|manifest\.json)$/;
+// One page per card is the one part of the site that grows with the game, so
+// card pages are never precached: each is kept the first time it is opened,
+// and offline the app draws any other card from the card data instead.
+const CARD_PAGE = /^ufm27\/players\/[^/]+\/index\.html$/;
 
 async function walk(dir) {
   const out = [];
@@ -32,7 +36,7 @@ async function walk(dir) {
 
 const web = (p) => relative(ROOT, p).split(sep).join('/');
 
-// Every page (as the address a reader opens), every asset a page links with
+// Every page but the card pages (as the address a reader opens), every asset a page links with
 // its stamp, every module without one (the app imports its modules
 // unstamped; stylesheets are only ever linked stamped), the card data, the
 // manifest and the icons.
@@ -40,7 +44,7 @@ export async function precacheList(root = ROOT) {
   const files = (await walk(root)).map((p) => relative(root, p).split(sep).join('/'));
   const list = new Set();
   for (const f of files) {
-    if (SKIP.test(f)) continue;
+    if (SKIP.test(f) || CARD_PAGE.test(f)) continue;
     if (f.endsWith('index.html')) list.add(f.slice(0, -'index.html'.length));
     else if (f === '404.html' || ICON.test(f) || /^js\/.+\.js$/.test(f) || /^data\/.+\.json$/.test(f)) list.add(f);
   }
