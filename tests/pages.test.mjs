@@ -181,3 +181,16 @@ test('a row read from a Collection Book page becomes a card with its club, its s
   const face = shirtCard(normalize(card).card);
   assert.equal((face.match(/<\/em>\?\?<\/span>/g) || []).length, 6);
 });
+
+test('the Collection Book tracker counts pages by spreads of 23 and names the next club', async () => {
+  const { split, progressMD } = await import('../tools/build-cards.mjs');
+  const rows = ['name,ovr,position,league,club,slot'];
+  for (let i = 1; i <= 24; i++) rows.push(`Player ${i},70,ST,Test League 1,Test FC,${i}`);
+  for (let i = 25; i <= 47; i++) rows.push(`Player ${i},70,ST,Test League 1,Demo City,${i}`);
+  const books = 'league,slot,club\nTest League 1,1,Test FC\nTest League 1,2,Demo City\nTest League 1,3,Sample United\nTest League 2,1,Other Town\n';
+  const md = progressMD(split(rows.join('\n')), books);
+  assert.match(md, /\| 1 \| Test FC \| 24 \| 1 to 4 \|/, '24 cards take two spreads');
+  assert.match(md, /\| 2 \| Demo City \| 23 \| 5 to 6 \|/, '23 cards fit one spread');
+  assert.match(md, /\| Test League 1 \| 2 of 3 \| 47 \| 1 to 6 \| Sample United, from page 7 \|/);
+  assert.match(md, /Not started: Test League 2\./);
+});

@@ -64,6 +64,11 @@ if either output is stale, so a sheet edit without a rebuild can't ship.
 
 ### From a Collection Book page
 
+Where the capture has got to, club by club and page by page, is in
+`docs/data/book-progress.md`. The build writes it from the sheet, so it is
+always current: it names the next club to send and the page it starts on.
+
+
 A club's Collection Book shows every player the club has, and that is the
 quickest way to fill the database: one screenshot of a spread is up to 24
 cards. A card the player doesn't own prints as an outline with four things on

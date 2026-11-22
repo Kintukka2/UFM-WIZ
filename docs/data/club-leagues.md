@@ -55,6 +55,7 @@ All 30 were read on 5 November 2026, in three batches, from a player's screensho
 - **The Collection Books screen** counts 30 books, the same 30 as `data/ufm27-leagues.csv`. The covers name the country, with a number from the second tier down: England, then England 2, 3 and 4. Two covers name it differently from the league list: **Korea** is South Korea 1 and **Switzerland** is Swiss 1. The screen's name sort still files Korea between Scotland and Spain.
 - **How the index runs.** Two facing pages of four columns by three rows, the left page filled before the right. `slot` follows that order. A book with more than 24 clubs runs on to a second spread: Argentina's slots 25 to 30.
 - **The order is the game's own**, not alphabetical, and `slot` keeps it.
+- **Río Cuarto Blue.** The index was first recorded with this club's real name, AA Estudiantes (Río Cuarto). Its book's own title, read on 22 November 2026, shows it as Río Cuarto Blue, so that is the shown name; the real one stays beside it.
 - **One name can be two clubs.** Kraków Red is both Cracovia and Wisła Kraków, and the Poland 1 book lists it twice, at slots 6 and 18.
 
 | Book | Clubs | Against the season list |
