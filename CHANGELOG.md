@@ -25,7 +25,8 @@ a release.
 
 - **The card is laid out the way the game lays it out.** The stats sit as a
   small label with its number right beside it, in two columns a third of the
-  way in, and the OVR, the position and the name are set at the game's sizes.
+  way in, and the OVR, the position and the name are set at the game's sizes. The
+  position starts on the same line as the OVR above it.
 - **Every card shows a player.** A faceless head and shoulders sits behind the
   name, in the place and the greys the game uses, on base and special cards
   alike. It is drawn for the site, not taken from the game.

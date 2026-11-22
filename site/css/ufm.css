@@ -186,7 +186,7 @@ code {
 
 .ucard__ovr b { display: block; font-family: var(--ufm-display); font-weight: 400; font-size: 26.5cqw; }
 
-.ucard__ovr span { display: block; margin-top: 2.5cqw; font-family: var(--ufm-display); font-size: 11.5cqw; letter-spacing: .02em; }
+.ucard__ovr span { display: block; margin-top: 2.5cqw; padding-left: 1cqw; font-family: var(--ufm-display); font-size: 11.5cqw; letter-spacing: .02em; }
 
 .ucard__name {
   position: absolute; left: 6%; right: 6%; top: 61%;
