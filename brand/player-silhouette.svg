@@ -1,0 +1,47 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 854'>
+<defs>
+<linearGradient id='fade' x1='0' y1='0' x2='0' y2='1'><stop offset='.56' stop-color='#fff'/><stop offset='.69' stop-color='#fff' stop-opacity='0'/></linearGradient>
+<linearGradient id='fadeX' x1='0' y1='0' x2='1' y2='0'><stop offset='0' stop-color='#000'/><stop offset='.1' stop-color='#fff'/><stop offset='.9' stop-color='#fff'/><stop offset='1' stop-color='#000'/></linearGradient><mask id='mx'><rect width='640' height='854' fill='url(#fadeX)'/></mask><mask id='m'><rect width='640' height='854' fill='url(#fade)'/></mask>
+<radialGradient id='face' cx='.5' cy='.4' r='.62'><stop offset='0' stop-color='#545454'/><stop offset='.7' stop-color='#585858'/><stop offset='1' stop-color='#666666'/></radialGradient>
+<linearGradient id='shirt' x1='0' y1='0' x2='1' y2='0'><stop offset='0' stop-color='#C5C7C7'/><stop offset='.28' stop-color='#AEAFB0'/><stop offset='.5' stop-color='#959697'/><stop offset='.72' stop-color='#AEAFB0'/><stop offset='1' stop-color='#CFD0D1'/></linearGradient>
+<linearGradient id='shadeD' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#505050' stop-opacity='.35'/><stop offset='.35' stop-color='#505050' stop-opacity='0'/></linearGradient>
+<filter id='hair' x='-10%' y='-10%' width='120%' height='120%'>
+ <feTurbulence type='fractalNoise' baseFrequency='.7 .45' numOctaves='2' seed='9' result='n'/>
+ <feDisplacementMap in='SourceGraphic' in2='n' scale='4' xChannelSelector='R' yChannelSelector='G' result='d'/>
+ <feColorMatrix in='n' type='matrix' values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .51  0 0 0 -1.1 .55' result='hi'/>
+ <feGaussianBlur in='hi' stdDeviation='.6' result='hib'/>
+ <feComposite in='hib' in2='d' operator='in' result='hi2'/>
+ <feMerge><feMergeNode in='d'/><feMergeNode in='hi2'/></feMerge>
+</filter>
+<linearGradient id='hairG' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#9A9B9B'/><stop offset='.6' stop-color='#858686'/><stop offset='1' stop-color='#6C6D6D'/></linearGradient><filter id='photo'><feGaussianBlur stdDeviation='.7'/></filter>
+<filter id='soft'><feGaussianBlur stdDeviation='1.5'/></filter>
+<filter id='blur'><feGaussianBlur stdDeviation='9'/></filter>
+<pattern id='pat' width='132' height='52' patternUnits='userSpaceOnUse' patternTransform='rotate(-11) skewX(-18)'>
+ <path d='M0 8h10v22h-10z M14 12h6v28h-6z M20 26h4v14h-4z M24 8h6v34h-6z M30 25h4v17h-4z M38 12h14v16h-14z M52 20h4v8h-4z M60 4h6v34h-6z M70 8h8v28h-8z M78 22h4v14h-4z M86 4h10v22h-10z M104 4h8v28h-8z M116 8h6v22h-6z M128 12h10v34h-10z' fill='#DCDDDE' opacity='.6'/>
+ <path d='M0 44h132v4h-132z' fill='#646566' opacity='.4'/>
+</pattern>
+</defs>
+<g mask='url(#m)'><g mask='url(#mx)'><g filter='url(#photo)'>
+ <!-- shoulders: from a wide neck, sloping out to the card's edges -->
+ <path d='M250 380C230 398 196 414 146 430C96 446 52 462 22 482L0 498L0 854L640 854L640 498C618 480 584 462 534 446C478 428 432 410 394 380Z' fill='url(#shirt)'/>
+ <path d='M250 380C230 398 196 414 146 430C96 446 52 462 22 482L0 498L0 854L640 854L640 498C618 480 584 462 534 446C478 428 432 410 394 380Z' fill='url(#pat)'/>
+ <path d='M250 380C230 398 196 414 146 430C96 446 52 462 22 482L0 498L0 854L640 854L640 498C618 480 584 462 534 446C478 428 432 410 394 380Z' fill='url(#shadeD)'/>
+ <path d='M60 470C110 540 120 650 108 854H0V470Z' fill='#585C5B' opacity='.3' filter='url(#blur)'/>
+ <path d='M590 470C540 540 530 650 542 854H640V470Z' fill='#585C5B' opacity='.22' filter='url(#blur)'/>
+ <!-- a soft shadow across the chest below the collar -->
+ <ellipse cx='322' cy='420' rx='120' ry='26' fill='#505050' opacity='.35' filter='url(#blur)'/>
+ <!-- neck -->
+ <path d='M262 300C262 330 258 362 250 392C290 410 354 410 394 392C386 362 382 330 382 300Z' fill='#5B5B58'/>
+ <path d='M256 360C292 380 352 380 388 360L390 374C354 396 290 396 254 374Z' fill='#4E4E4C' opacity='.7' filter='url(#soft)'/>
+ <!-- crew collar -->
+ <path d='M244 388C276 420 368 420 400 388L408 396C372 432 272 432 236 396Z' fill='#8E8F90' opacity='.8'/>
+ <!-- ears -->
+ <path d='M242 216C226 210 218 226 222 248C226 272 238 286 252 288Z' fill='#8F9193'/>
+ <path d='M400 216C416 210 424 226 420 248C416 272 404 286 390 288Z' fill='#8F9193'/>
+ <!-- the face: one even shadow, a squared jaw -->
+ <path d='M244 196C242 248 246 290 260 318C274 344 296 356 322 358C348 356 370 344 384 318C398 290 402 248 400 196C398 156 374 136 322 134C270 136 246 156 244 196Z' fill='url(#face)'/>
+ <!-- hair: short, cropped at the sides, fuller on top -->
+ <path d='M236.0 216.2 L236.0 176.2 L237.7 168.2 L239.4 160.5 L234.5 151.6 L240.0 144.7 L246.1 138.8 L245.1 130.0 L246.4 121.8 L253.7 117.7 L254.6 108.7 L258.0 101.4 L265.8 99.0 L266.8 87.7 L276.6 89.4 L282.0 84.2 L288.0 80.3 L294.7 78.0 L300.9 73.8 L307.6 70.3 L315.0 72.2 L322.0 72.5 L328.9 73.3 L336.0 73.1 L342.5 76.1 L349.8 76.2 L354.0 85.6 L362.8 82.5 L369.6 85.4 L374.1 92.3 L380.3 96.4 L387.5 99.7 L390.2 107.9 L391.1 117.0 L401.0 119.6 L398.1 130.4 L404.1 136.2 L409.9 142.9 L401.6 153.2 L402.8 160.7 L408.0 168.1 L409.3 176.3 L409.3 216.3 C392 176 378 160 356 154 C334 148 306 148 286 154 C266 160 252 176 236.0 216.2Z' fill='url(#hairG)' filter='url(#hair)'/>
+ <path d='M244 196C246 168 262 152 296 148' fill='none' stroke='#6A6B6B' stroke-width='5' opacity='.7' filter='url(#soft)'/>
+</g></g></g>
+</svg>

@@ -26,6 +26,9 @@ a release.
 - **The card is laid out the way the game lays it out.** The stats sit as a
   small label with its number right beside it, in two columns a third of the
   way in, and the OVR, the position and the name are set at the game's sizes.
+- **Every card shows a player.** A faceless head and shoulders sits behind the
+  name, in the place and the greys the game uses, on base and special cards
+  alike. It is drawn for the site, not taken from the game.
 - **A card prints the whole name it carries.** "Martínez Quarta" stays
   "Martínez Quarta" instead of being cut to "Quarta", and a long name steps
   down a size to fit.

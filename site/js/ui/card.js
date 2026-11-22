@@ -65,7 +65,7 @@ export function shirtCard(card, { label = '' } = {}) {
   const defs = statsFor(card.pos[0]);
   const order = [0, 3, 1, 4, 2, 5].map((i) => defs[i]);
   const stats = order.map((s) => `<span><em>${s.label}</em>${card.stats?.[s.key] ?? NO_STAT}</span>`).join('');
-  return `<div class="ucard ${cls}" style="${style}"><div class="ucard__face">`
+  return `<div class="ucard ${cls}" style="${style}"><div class="ucard__face"><i class="ucard__plyr" aria-hidden="true"></i>`
     + `<div class="ucard__ovr"><b>${card.ovr}</b><span>${esc(card.pos[0])}</span></div>`
     + `<div class="ucard__name${nameSize(card.name)}">${esc(card.name)}</div>`
     + `<div class="ucard__stats">${stats}</div></div></div>`;
