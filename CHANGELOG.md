@@ -12,9 +12,15 @@ a release.
 
 ### Added
 
-- **Twelve more Argentina 1 clubs in the card database.** Córdoba Navies to
-  Rosario Yellow bring it to 688 cards across the league's first 24 books.
-  Twelve of them carry their full stats.
+- **All of Argentina 1 is in the card database.** Córdoba Navies to Río
+  Cuarto Blue bring it to 864 cards, every player in the league's 30 club
+  books. Fourteen of them carry their full stats.
+
+### Changed
+
+- **Río Cuarto Blue goes by the name the game shows.** The club was listed
+  under its real name, AA Estudiantes (Río Cuarto); its Collection Book calls
+  it Río Cuarto Blue, so its page has moved to that name.
 
 ## [0.5.1] - Unreleased
 

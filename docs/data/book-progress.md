@@ -9,7 +9,7 @@ league's book. A club counts as in once any of its base cards are.
 
 | League | Clubs in | Cards in | Pages in | Next to send |
 |---|---|---|---|---|
-| Argentina 1 | 24 of 30 | 688 | 1 to 90 | Santa Fe Red White, from page 91 |
+| Argentina 1 | 30 of 30 | 864 | 1 to 114 | Done |
 
 Not started: Australia 1, Austria 1, Belgium 1, Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
@@ -41,9 +41,9 @@ Not started: Australia 1, Austria 1, Belgium 1, Brazil 1, Denmark 1, England 1, 
 | 22 | Riestra Black | 31 | 79 to 82 |
 | 23 | Rosario Black Red | 32 | 83 to 86 |
 | 24 | Rosario Yellow | 30 | 87 to 90 |
-| 25 | Santa Fe Red White | | next, from page 91 |
-| 26 | Santiago White | |  |
-| 27 | Tucumán Blue | |  |
-| 28 | Victoria Blue | |  |
-| 29 | Mendoza Black | |  |
-| 30 | AA Estudiantes (Río Cuarto) | |  |
+| 25 | Santa Fe Red White | 24 | 91 to 94 |
+| 26 | Santiago White | 29 | 95 to 98 |
+| 27 | Tucumán Blue | 31 | 99 to 102 |
+| 28 | Victoria Blue | 29 | 103 to 106 |
+| 29 | Mendoza Black | 30 | 107 to 110 |
+| 30 | Río Cuarto Blue | 33 | 111 to 114 |
