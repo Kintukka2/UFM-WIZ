@@ -23,6 +23,12 @@ a release.
 
 ### Changed
 
+- **The card is laid out the way the game lays it out.** The stats sit as a
+  small label with its number right beside it, in two columns a third of the
+  way in, and the OVR, the position and the name are set at the game's sizes.
+- **A card prints the whole name it carries.** "Martínez Quarta" stays
+  "Martínez Quarta" instead of being cut to "Quarta", and a long name steps
+  down a size to fit.
 - **A card's address now carries its club.** The game's books print surnames
   only, so the club is what keeps two players with one name apart.
 

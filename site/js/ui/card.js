@@ -67,21 +67,14 @@ export function shirtCard(card, { label = '' } = {}) {
   const stats = order.map((s) => `<span><em>${s.label}</em>${card.stats?.[s.key] ?? NO_STAT}</span>`).join('');
   return `<div class="ucard ${cls}" style="${style}"><div class="ucard__face">`
     + `<div class="ucard__ovr"><b>${card.ovr}</b><span>${esc(card.pos[0])}</span></div>`
-    + `<div class="ucard__name">${esc(shortName(card.name))}</div>`
+    + `<div class="ucard__name${nameSize(card.name)}">${esc(card.name)}</div>`
     + `<div class="ucard__stats">${stats}</div></div></div>`;
 }
 
-// Cards print a surname: "Erling Haaland" -> "Haaland". A particle stays with
-// it ("Virgil van Dijk" -> "van Dijk"), and so does a short last word.
-const PARTICLES = new Set(['van', 'de', 'da', 'das', 'do', 'dos', 'di', 'del', 'della', 'der', 'den', 'le', 'la', 'ter', 'ten', 'von', 'el', 'al', 'bin', 'mac']);
-export function shortName(name) {
-  const parts = String(name).trim().split(/\s+/);
-  if (parts.length < 2) return name;
-  let i = parts.length - 1;
-  while (i > 0 && PARTICLES.has(parts[i - 1].toLowerCase())) i--;
-  if (i === parts.length - 1 && parts[i].length <= 3) i--;
-  return parts.slice(i).join(' ');
-}
+// The name prints as the card prints it: the books and cards show a surname,
+// sometimes two words of one ("Martínez Quarta"), and that is what the sheet
+// records, so nothing is cut. A long one steps down a size, as the game's does.
+const nameSize = (name) => { const n = String(name).length; return n > 15 ? ' ucard__name--xl' : n > 11 ? ' ucard__name--l' : ''; };
 
 // A plain two-colour shield for a club. We don't draw real crests; the
 // colours are picked from the name, so a club always gets the same pair.

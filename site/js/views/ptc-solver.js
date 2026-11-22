@@ -10,7 +10,7 @@ import { POSITIONS } from '../data/football.js';
 import { QUALITIES, RARITIES } from '../data/rarities.js';
 import { myCards } from '../lib/cards.js';
 import { tradeIn } from '../lib/board.js';
-import { shirtCard, shortName } from '../ui/card.js';
+import { shirtCard } from '../ui/card.js';
 import { openDialog, confirmDialog, toast } from '../ui/dialog.js';
 import { pickCard } from '../ui/picker.js';
 
@@ -532,7 +532,7 @@ function swap(i, inId) {
   const out = ch.cards[i];
   ch.cards[i] = card;
   replace(ch);
-  toast(`Swapped: ${shortName(out.name)} stays in your squad, ${shortName(card.name)} goes in.`);
+  toast(`Swapped: ${(out.name)} stays in your squad, ${(card.name)} goes in.`);
 }
 
 export function mount(body) {

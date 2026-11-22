@@ -9,7 +9,7 @@ import { rarity as rarityOf, quality as qualityOf } from '../data/rarities.js';
 import { myCards, databaseCards, matchesQuery } from '../lib/cards.js';
 import { cardSlugs } from '../lib/carddb.js';
 import { MAX, compare, focusOptions, normalizePicks, linkQuery, readQuery } from '../lib/compare.js';
-import { shirtCard, cardRow, rarityChip, shortName } from '../ui/card.js';
+import { shirtCard, cardRow, rarityChip } from '../ui/card.js';
 import { openDialog, toast } from '../ui/dialog.js';
 
 const PICKS = 'compare', FOCUS = 'compare:focus';
@@ -60,7 +60,7 @@ function slotsHTML(cards) {
 function tableHTML(cards, cmp) {
   if (cards.length < 2) return '';
   // Two versions of one player share a surname, so the head carries the OVR too.
-  const headCells = cards.map((c) => `<th class="n" scope="col">${esc(shortName(c.name))} ${c.ovr}</th>`).join('');
+  const headCells = cards.map((c) => `<th class="n" scope="col">${esc(c.name)} ${c.ovr}</th>`).join('');
   const rating = (r) => `<tr class="${r.focus ? 'is-on' : ''}"><th scope="row"><b>${esc(r.label)}</b><small>${esc(r.name)}</small></th>${r.vals.map((v) =>
     `<td class="n${r.best != null && v === r.best ? ' cmp-best' : ''}">${v == null ? '–' : v}</td>`).join('')}</tr>`;
   const detail = (label, f) => `<tr class="cmp-detail"><th scope="row">${label}</th>${cards.map((c) => `<td class="n">${f(c)}</td>`).join('')}</tr>`;
