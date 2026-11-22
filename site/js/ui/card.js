@@ -50,7 +50,7 @@ function metal(card) {
   if (r.fill) {
     const ink = lum(r.fill) > 0.4 ? 'var(--ufm-ink-card)' : '#FFFFFF';
     const m = `linear-gradient(-8deg, transparent 0 64%, ${r.rim} 64% 66.5%, transparent 66.5% 70%, ${r.rim} 70% 71.5%, transparent 71.5%), linear-gradient(172deg, ${shade(r.fill, 0.18)} 0%, ${r.fill} 48%, ${shade(r.fill, -0.35)} 100%)`;
-    return { cls: 'ucard--special', style: `--m:${m};--rim:${r.rim};--cink:${ink}` };
+    return { cls: 'ucard--special', style: `--m:${m};--rim:${r.rim};--cink:${ink}${ink === '#FFFFFF' ? ';--cshadow:var(--ufm-ink-lift)' : ''}` };
   }
   const q = qualityOf(card.quality).metal;
   return { cls: q === 'gold' ? '' : `ucard--${q}`, style: '' };

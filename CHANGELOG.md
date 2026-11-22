@@ -19,14 +19,15 @@ a release.
   the Squad Builder and Compare.
 - **A stat nobody has read yet prints as ??.** A Collection Book outline shows
   a player's OVR and position but not the six sub-stats, so those wait until
-  someone reads the card itself.
+  someone reads the card itself. Compare prints it the same way.
 
 ### Changed
 
 - **The card is laid out the way the game lays it out.** The stats sit as a
   small label with its number right beside it, in two columns a third of the
   way in, and the OVR, the position and the name are set at the game's sizes. The
-  position starts on the same line as the OVR above it.
+  position starts on the same line as the OVR above it. White numbers carry
+  a soft shadow so they hold over a busy face.
 - **Every card shows a player.** A faceless head and shoulders sits behind the
   name, in the place and the greys the game uses, on base and special cards
   alike. It is drawn for the site, not taken from the game.

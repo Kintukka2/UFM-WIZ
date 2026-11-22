@@ -13,7 +13,7 @@
  <feComposite in='hib' in2='d' operator='in' result='hi2'/>
  <feMerge><feMergeNode in='d'/><feMergeNode in='hi2'/></feMerge>
 </filter>
-<linearGradient id='hairG' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#9A9B9B'/><stop offset='.6' stop-color='#858686'/><stop offset='1' stop-color='#6C6D6D'/></linearGradient><filter id='photo'><feGaussianBlur stdDeviation='.7'/></filter>
+<linearGradient id='hairG' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#9A9B9B'/><stop offset='.6' stop-color='#858686'/><stop offset='1' stop-color='#6C6D6D'/></linearGradient><filter id='photo'><feGaussianBlur stdDeviation='1.1'/></filter>
 <filter id='soft'><feGaussianBlur stdDeviation='1.5'/></filter>
 <filter id='blur'><feGaussianBlur stdDeviation='9'/></filter>
 <pattern id='pat' width='132' height='52' patternUnits='userSpaceOnUse' patternTransform='rotate(-11) skewX(-18)'>
@@ -31,8 +31,8 @@
  <!-- a soft shadow across the chest below the collar -->
  <ellipse cx='322' cy='420' rx='120' ry='26' fill='#505050' opacity='.35' filter='url(#blur)'/>
  <!-- neck -->
- <path d='M262 300C262 330 258 362 250 392C290 410 354 410 394 392C386 362 382 330 382 300Z' fill='#5B5B58'/>
- <path d='M256 360C292 380 352 380 388 360L390 374C354 396 290 396 254 374Z' fill='#4E4E4C' opacity='.7' filter='url(#soft)'/>
+ <path d='M262 300C262 330 258 362 250 392C290 410 354 410 394 392C386 362 382 330 382 300Z' fill='#5E5E5B'/>
+ <path d='M266 318C292 352 352 352 378 318L380 340C350 372 294 372 264 340Z' fill='#4E4E4C' opacity='.45' filter='url(#blur)'/>
  <!-- crew collar -->
  <path d='M244 388C276 420 368 420 400 388L408 396C372 432 272 432 236 396Z' fill='#8E8F90' opacity='.8'/>
  <!-- ears -->

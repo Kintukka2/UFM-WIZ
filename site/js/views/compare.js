@@ -4,7 +4,7 @@
 // lib/compare.js.
 
 import { esc, on, load, save } from '../lib/util.js';
-import { POSITION_NAMES } from '../data/football.js';
+import { POSITION_NAMES, NO_STAT } from '../data/football.js';
 import { rarity as rarityOf, quality as qualityOf } from '../data/rarities.js';
 import { myCards, databaseCards, matchesQuery } from '../lib/cards.js';
 import { cardSlugs } from '../lib/carddb.js';
@@ -62,7 +62,7 @@ function tableHTML(cards, cmp) {
   // Two versions of one player share a surname, so the head carries the OVR too.
   const headCells = cards.map((c) => `<th class="n" scope="col">${esc(c.name)} ${c.ovr}</th>`).join('');
   const rating = (r) => `<tr class="${r.focus ? 'is-on' : ''}"><th scope="row"><b>${esc(r.label)}</b><small>${esc(r.name)}</small></th>${r.vals.map((v) =>
-    `<td class="n${r.best != null && v === r.best ? ' cmp-best' : ''}">${v == null ? '–' : v}</td>`).join('')}</tr>`;
+    `<td class="n${r.best != null && v === r.best ? ' cmp-best' : ''}">${v == null ? NO_STAT : v}</td>`).join('')}</tr>`;
   const detail = (label, f) => `<tr class="cmp-detail"><th scope="row">${label}</th>${cards.map((c) => `<td class="n">${f(c)}</td>`).join('')}</tr>`;
   return `<div class="dtable-wrap cmp-tablewrap"><table class="dtable cmp-table">
     <thead><tr><th scope="col">Rating</th>${headCells}</tr></thead>
