@@ -8,6 +8,14 @@ a release.
 
 ## [Unreleased]
 
+## [0.7.0] - Unreleased
+
+### Added
+
+- **Australia 1, Austria 1 and Belgium 1 in the card database.** Every club
+  book of all three, 301, 330 and 511 cards, brings the database to 2,006.
+  Thirty-five of the new cards carry their full stats.
+
 ## [0.6.0] - Unreleased
 
 ### Added

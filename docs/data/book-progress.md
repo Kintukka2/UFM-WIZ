@@ -5,13 +5,18 @@ league books. Don't edit this by hand.
 
 A spread shows the club's tile and up to 23 cards, so a club with n cards
 takes ceil(n / 23) spreads of two pages. Pages count from 1 in each
-league's book. A club counts as in once any of its base cards are.
+league's book. A club counts as in once any of its base cards are. Book
+numbers also start at 1 in each league, and a number nobody has sent shows up
+as "not seen yet".
 
-| League | Clubs in | Cards in | Pages in | Next to send |
-|---|---|---|---|---|
-| Argentina 1 | 30 of 30 | 864 | 1 to 114 | Done |
+| League | Clubs in | Cards in | Pages in | Book numbers | Next to send |
+|---|---|---|---|---|---|
+| Argentina 1 | 30 of 30 | 864 | 1 to 114 | All accounted for | Done |
+| Australia 1 | 12 of 12 | 301 | 1 to 42 | All accounted for | Done |
+| Austria 1 | 12 of 12 | 330 | 1 to 48 | All accounted for | Done |
+| Belgium 1 | 18 of 18 | 511 | 1 to 70 | All accounted for | Done |
 
-Not started: Australia 1, Austria 1, Belgium 1, Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
+Not started: Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
 ## Argentina 1
 
@@ -47,3 +52,60 @@ Not started: Australia 1, Austria 1, Belgium 1, Brazil 1, Denmark 1, England 1, 
 | 28 | Victoria Blue | 29 | 103 to 106 |
 | 29 | Mendoza Black | 30 | 107 to 110 |
 | 30 | Río Cuarto Blue | 33 | 111 to 114 |
+
+## Australia 1
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Adelaide Red | 29 | 1 to 4 |
+| 2 | Auckland Blue | 24 | 5 to 8 |
+| 3 | Brisbane Orange | 24 | 9 to 12 |
+| 4 | Gosford Yellow | 25 | 13 to 16 |
+| 5 | Melbourne Blue | 28 | 17 to 20 |
+| 6 | Melbourne Navy Blue | 25 | 21 to 24 |
+| 7 | Newcastle Blue | 23 | 25 to 26 |
+| 8 | Perth Purple | 26 | 27 to 30 |
+| 9 | Sydney Blacks | 23 | 31 to 32 |
+| 10 | Sydney Blue | 27 | 33 to 36 |
+| 11 | Wellington Red | 29 | 37 to 40 |
+| 12 | Wellington Yellow | 18 | 41 to 42 |
+
+## Austria 1
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Altach Black | 26 | 1 to 4 |
+| 2 | Graz Black | 27 | 5 to 8 |
+| 3 | Graz Red | 24 | 9 to 12 |
+| 4 | Hartberg Blue | 29 | 13 to 16 |
+| 5 | Innsbruck Green | 26 | 17 to 20 |
+| 6 | Linz Black | 25 | 21 to 24 |
+| 7 | Ried Green | 29 | 25 to 28 |
+| 8 | Salzburg | 30 | 29 to 32 |
+| 9 | Vienna Green | 30 | 33 to 36 |
+| 10 | Vienna Purple | 29 | 37 to 40 |
+| 11 | Wolfsberg White | 30 | 41 to 44 |
+| 12 | Lustenau Green | 25 | 45 to 48 |
+
+## Belgium 1
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Cercle Brugge | 25 | 1 to 4 |
+| 2 | Club Brugge | 27 | 5 to 8 |
+| 3 | KAA Gent | 32 | 9 to 12 |
+| 4 | KRC Genk | 30 | 13 to 16 |
+| 5 | KV Mechelen | 31 | 17 to 20 |
+| 6 | KVC Westerlo | 33 | 21 to 24 |
+| 7 | OH Leuven | 32 | 25 to 28 |
+| 8 | RAAL La Louvière | 29 | 29 to 32 |
+| 9 | Royal Antwerp FC | 29 | 33 to 36 |
+| 10 | Royale Union Saint-Gilloise | 27 | 37 to 40 |
+| 11 | RSC Anderlecht | 32 | 41 to 44 |
+| 12 | Sp. Charleroi | 23 | 45 to 46 |
+| 13 | Standard Liège | 27 | 47 to 50 |
+| 14 | STVV | 26 | 51 to 54 |
+| 15 | Zulte Waregem | 27 | 55 to 58 |
+| 16 | KV Kortrijk | 29 | 59 to 62 |
+| 17 | Lommel SK | 26 | 63 to 66 |
+| 18 | SK Beveren | 26 | 67 to 70 |

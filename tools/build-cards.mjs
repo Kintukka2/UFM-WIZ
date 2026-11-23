@@ -47,7 +47,23 @@ export function progressMD(parts, booksCSV) {
   const books = parseCSV(booksCSV).slice(1).filter((r) => r.length >= 3)
     .map(([league, slot, club]) => ({ league, slot: Number(slot), club }));
   const count = {};
-  for (const { card } of parts.cards) if (card.rarity === 'normal') count[card.league + '|' + card.club] = (count[card.league + '|' + card.club] || 0) + 1;
+  // Book numbers start at 1 in each league. An owned card shows in full and
+  // prints none, so a league's unprinted numbers should equal its owned cards;
+  // any beyond that are cards nobody has sent yet.
+  const printed = {}, owned = {};
+  for (const { card } of parts.cards) {
+    if (card.rarity !== 'normal') continue;
+    count[card.league + '|' + card.club] = (count[card.league + '|' + card.club] || 0) + 1;
+    if (card.slot) (printed[card.league] = printed[card.league] || new Set()).add(card.slot);
+    else owned[card.league] = (owned[card.league] || 0) + 1;
+  }
+  const gaps = (league) => {
+    const s = printed[league];
+    if (!s) return { missing: [], unseen: 0 };
+    const top = Math.max(...s), missing = [];
+    for (let n = 1; n <= top; n++) if (!s.has(n)) missing.push(n);
+    return { missing, unseen: Math.max(0, missing.length - (owned[league] || 0)) };
+  };
   const leagues = [...new Set(books.map((b) => b.league))];
   const started = leagues.filter((l) => books.some((b) => b.league === l && count[l + '|' + b.club]));
   let md = `# Collection Book progress
@@ -57,10 +73,12 @@ league books. Don't edit this by hand.
 
 A spread shows the club's tile and up to ${CARDS_PER_SPREAD} cards, so a club with n cards
 takes ceil(n / ${CARDS_PER_SPREAD}) spreads of two pages. Pages count from 1 in each
-league's book. A club counts as in once any of its base cards are.
+league's book. A club counts as in once any of its base cards are. Book
+numbers also start at 1 in each league, and a number nobody has sent shows up
+as "not seen yet".
 
 `;
-  md += `| League | Clubs in | Cards in | Pages in | Next to send |\n|---|---|---|---|---|\n`;
+  md += `| League | Clubs in | Cards in | Pages in | Book numbers | Next to send |\n|---|---|---|---|---|---|\n`;
   const detail = [];
   for (const league of leagues) {
     const list = books.filter((b) => b.league === league).sort((a, b) => a.slot - b.slot);
@@ -78,8 +96,11 @@ league's book. A club counts as in once any of its base cards are.
       }
     }
     if (!started.includes(league)) continue;
-    md += `| ${league} | ${clubsIn} of ${list.length} | ${cardsIn} | ${lastPage ? `1 to ${lastPage}` : '—'} | ${next ? `${next.club}, from page ${lastPage + 1}` : 'Done'} |\n`;
-    detail.push(`\n## ${league}\n\n| # | Club | Cards | Pages |\n|---|---|---|---|\n${rows.join('\n')}\n`);
+    const g = gaps(league);
+    const numbers = g.unseen ? `${g.unseen} not seen yet` : 'All accounted for';
+    md += `| ${league} | ${clubsIn} of ${list.length} | ${cardsIn} | ${lastPage ? `1 to ${lastPage}` : '—'} | ${numbers} | ${next ? `${next.club}, from page ${lastPage + 1}` : 'Done'} |\n`;
+    const note = g.unseen ? `\nBook numbers not printed: ${g.missing.map((n) => '#' + n).join(', ')}. ${owned[league] || 0} of them are owned cards, which print none; the other ${g.unseen} ${g.unseen === 1 ? 'is a card' : 'are cards'} still to send, most likely on a club's next spread.\n` : '';
+    detail.push(`\n## ${league}\n\n| # | Club | Cards | Pages |\n|---|---|---|---|\n${rows.join('\n')}\n${note}`);
   }
   const untouched = leagues.filter((l) => !started.includes(l));
   if (untouched.length) md += `\nNot started: ${untouched.join(', ')}.\n`;
