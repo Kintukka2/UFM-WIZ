@@ -8,6 +8,14 @@ a release.
 
 ## [Unreleased]
 
+## [0.7.0] - Unreleased
+
+### Added
+
+- **Australia 1 in the card database.** Eleven of the league's twelve club
+  books, Adelaide Red to Wellington Red, add 283 cards and bring the database
+  to 1,147. Wellington Yellow is still to come.
+
 ## [0.6.0] - Unreleased
 
 ### Added
