@@ -13,9 +13,10 @@ as "not seen yet".
 |---|---|---|---|---|---|
 | Argentina 1 | 30 of 30 | 864 | 1 to 114 | All accounted for | Done |
 | Australia 1 | 12 of 12 | 301 | 1 to 42 | All accounted for | Done |
-| Austria 1 | 10 of 12 | 269 | 1 to 38 | 1 not seen yet | Wolfsberg White, from page 39 |
+| Austria 1 | 11 of 12 | 305 | 1 to 44 | All accounted for | Lustenau Green, from page 45 |
+| Belgium 1 | 8 of 18 | 239 | 1 to 32 | All accounted for | Royal Antwerp FC, from page 33 |
 
-Not started: Belgium 1, Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
+Not started: Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
 ## Argentina 1
 
@@ -82,8 +83,29 @@ Not started: Belgium 1, Brazil 1, Denmark 1, England 1, England 2, England 3, En
 | 7 | Ried Green | 29 | 25 to 28 |
 | 8 | Salzburg | 30 | 29 to 32 |
 | 9 | Vienna Green | 30 | 33 to 36 |
-| 10 | Vienna Purple | 23 | 37 to 38 |
-| 11 | Wolfsberg White | | next, from page 39 |
-| 12 | Lustenau Green | |  |
+| 10 | Vienna Purple | 29 | 37 to 40 |
+| 11 | Wolfsberg White | 30 | 41 to 44 |
+| 12 | Lustenau Green | | next, from page 45 |
 
-Book numbers not printed: #108, #201, #202, #214, #232, #269. 5 of them are owned cards, which print none; the other 1 is a card still to send, most likely on a club's next spread.
+## Belgium 1
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Cercle Brugge | 25 | 1 to 4 |
+| 2 | Club Brugge | 27 | 5 to 8 |
+| 3 | KAA Gent | 32 | 9 to 12 |
+| 4 | KRC Genk | 30 | 13 to 16 |
+| 5 | KV Mechelen | 31 | 17 to 20 |
+| 6 | KVC Westerlo | 33 | 21 to 24 |
+| 7 | OH Leuven | 32 | 25 to 28 |
+| 8 | RAAL La Louvière | 29 | 29 to 32 |
+| 9 | Royal Antwerp FC | | next, from page 33 |
+| 10 | Royale Union Saint-Gilloise | |  |
+| 11 | RSC Anderlecht | |  |
+| 12 | Sp. Charleroi | |  |
+| 13 | Standard Liège | |  |
+| 14 | STVV | |  |
+| 15 | Zulte Waregem | |  |
+| 16 | KV Kortrijk | |  |
+| 17 | Lommel SK | |  |
+| 18 | SK Beveren | |  |
