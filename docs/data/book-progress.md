@@ -13,8 +13,8 @@ as "not seen yet".
 |---|---|---|---|---|---|
 | Argentina 1 | 30 of 30 | 864 | 1 to 114 | All accounted for | Done |
 | Australia 1 | 12 of 12 | 301 | 1 to 42 | All accounted for | Done |
-| Austria 1 | 11 of 12 | 305 | 1 to 44 | All accounted for | Lustenau Green, from page 45 |
-| Belgium 1 | 8 of 18 | 239 | 1 to 32 | All accounted for | Royal Antwerp FC, from page 33 |
+| Austria 1 | 12 of 12 | 330 | 1 to 48 | All accounted for | Done |
+| Belgium 1 | 18 of 18 | 511 | 1 to 70 | All accounted for | Done |
 
 Not started: Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
@@ -85,7 +85,7 @@ Not started: Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, Fr
 | 9 | Vienna Green | 30 | 33 to 36 |
 | 10 | Vienna Purple | 29 | 37 to 40 |
 | 11 | Wolfsberg White | 30 | 41 to 44 |
-| 12 | Lustenau Green | | next, from page 45 |
+| 12 | Lustenau Green | 25 | 45 to 48 |
 
 ## Belgium 1
 
@@ -99,13 +99,13 @@ Not started: Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, Fr
 | 6 | KVC Westerlo | 33 | 21 to 24 |
 | 7 | OH Leuven | 32 | 25 to 28 |
 | 8 | RAAL La Louvière | 29 | 29 to 32 |
-| 9 | Royal Antwerp FC | | next, from page 33 |
-| 10 | Royale Union Saint-Gilloise | |  |
-| 11 | RSC Anderlecht | |  |
-| 12 | Sp. Charleroi | |  |
-| 13 | Standard Liège | |  |
-| 14 | STVV | |  |
-| 15 | Zulte Waregem | |  |
-| 16 | KV Kortrijk | |  |
-| 17 | Lommel SK | |  |
-| 18 | SK Beveren | |  |
+| 9 | Royal Antwerp FC | 29 | 33 to 36 |
+| 10 | Royale Union Saint-Gilloise | 27 | 37 to 40 |
+| 11 | RSC Anderlecht | 32 | 41 to 44 |
+| 12 | Sp. Charleroi | 23 | 45 to 46 |
+| 13 | Standard Liège | 27 | 47 to 50 |
+| 14 | STVV | 26 | 51 to 54 |
+| 15 | Zulte Waregem | 27 | 55 to 58 |
+| 16 | KV Kortrijk | 29 | 59 to 62 |
+| 17 | Lommel SK | 26 | 63 to 66 |
+| 18 | SK Beveren | 26 | 67 to 70 |

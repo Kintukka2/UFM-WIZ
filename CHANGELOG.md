@@ -12,10 +12,9 @@ a release.
 
 ### Added
 
-- **Australia 1 in the card database, most of Austria 1, and the start of
-  Belgium 1.** All twelve Australia 1 club books (301 cards), eleven of Austria
-  1's twelve (305) and eight of Belgium 1's eighteen (239) bring the database
-  to 1,709. Twenty of the new cards carry their full stats.
+- **Australia 1, Austria 1 and Belgium 1 in the card database.** Every club
+  book of all three, 301, 330 and 511 cards, brings the database to 2,006.
+  Thirty-five of the new cards carry their full stats.
 
 ## [0.6.0] - Unreleased
 
