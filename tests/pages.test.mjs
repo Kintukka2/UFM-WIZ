@@ -191,6 +191,10 @@ test('the Collection Book tracker counts pages by spreads of 23 and names the ne
   const md = progressMD(split(rows.join('\n')), books);
   assert.match(md, /\| 1 \| Test FC \| 24 \| 1 to 4 \|/, '24 cards take two spreads');
   assert.match(md, /\| 2 \| Demo City \| 23 \| 5 to 6 \|/, '23 cards fit one spread');
-  assert.match(md, /\| Test League 1 \| 2 of 3 \| 47 \| 1 to 6 \| Sample United, from page 7 \|/);
+  assert.match(md, /\| Test League 1 \| 2 of 3 \| 47 \| 1 to 6 \| All accounted for \| Sample United, from page 7 \|/);
+  // a number neither printed nor held by an owned card is a card still to send
+  const gap = split(rows.filter((r) => !/,(30|31)$/.test(r)).join('\n') + '\nOwned One,70,ST,Test League 1,Test FC,');
+  assert.match(progressMD(gap, books), /\| 1 not seen yet \|/);
+  assert.match(progressMD(gap, books), /Book numbers not printed: #30, #31\. 1 of them are owned cards/);
   assert.match(md, /Not started: Test League 2\./);
 });

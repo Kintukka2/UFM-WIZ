@@ -5,14 +5,17 @@ league books. Don't edit this by hand.
 
 A spread shows the club's tile and up to 23 cards, so a club with n cards
 takes ceil(n / 23) spreads of two pages. Pages count from 1 in each
-league's book. A club counts as in once any of its base cards are.
+league's book. A club counts as in once any of its base cards are. Book
+numbers also start at 1 in each league, and a number nobody has sent shows up
+as "not seen yet".
 
-| League | Clubs in | Cards in | Pages in | Next to send |
-|---|---|---|---|---|
-| Argentina 1 | 30 of 30 | 864 | 1 to 114 | Done |
-| Australia 1 | 11 of 12 | 283 | 1 to 40 | Wellington Yellow, from page 41 |
+| League | Clubs in | Cards in | Pages in | Book numbers | Next to send |
+|---|---|---|---|---|---|
+| Argentina 1 | 30 of 30 | 864 | 1 to 114 | All accounted for | Done |
+| Australia 1 | 12 of 12 | 301 | 1 to 42 | All accounted for | Done |
+| Austria 1 | 10 of 12 | 269 | 1 to 38 | 1 not seen yet | Wolfsberg White, from page 39 |
 
-Not started: Austria 1, Belgium 1, Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
+Not started: Belgium 1, Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
 ## Argentina 1
 
@@ -64,4 +67,23 @@ Not started: Austria 1, Belgium 1, Brazil 1, Denmark 1, England 1, England 2, En
 | 9 | Sydney Blacks | 23 | 31 to 32 |
 | 10 | Sydney Blue | 27 | 33 to 36 |
 | 11 | Wellington Red | 29 | 37 to 40 |
-| 12 | Wellington Yellow | | next, from page 41 |
+| 12 | Wellington Yellow | 18 | 41 to 42 |
+
+## Austria 1
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Altach Black | 26 | 1 to 4 |
+| 2 | Graz Black | 27 | 5 to 8 |
+| 3 | Graz Red | 24 | 9 to 12 |
+| 4 | Hartberg Blue | 29 | 13 to 16 |
+| 5 | Innsbruck Green | 26 | 17 to 20 |
+| 6 | Linz Black | 25 | 21 to 24 |
+| 7 | Ried Green | 29 | 25 to 28 |
+| 8 | Salzburg | 30 | 29 to 32 |
+| 9 | Vienna Green | 30 | 33 to 36 |
+| 10 | Vienna Purple | 23 | 37 to 38 |
+| 11 | Wolfsberg White | | next, from page 39 |
+| 12 | Lustenau Green | |  |
+
+Book numbers not printed: #108, #201, #202, #214, #232, #269. 5 of them are owned cards, which print none; the other 1 is a card still to send, most likely on a club's next spread.
