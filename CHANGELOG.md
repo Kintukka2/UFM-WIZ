@@ -8,6 +8,17 @@ a release.
 
 ## [Unreleased]
 
+## [0.8.0] - Unreleased
+
+### Added
+
+- **Brazil 1 in the card database.** All twenty of the league's club books,
+  SC Internacional to Chapecoense, add 652 cards and bring the database to
+  2,659. Twenty-six of them carry their full stats.
+- **A card the game shows with no name is Unknown.** One owned SK Beveren card
+  shows in full with no name on it. It is in the database as Unknown, at
+  unknown-001, until its name is read off the player's profile.
+
 ## [0.7.0] - Unreleased
 
 ### Added

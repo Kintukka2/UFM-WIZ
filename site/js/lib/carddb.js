@@ -14,13 +14,22 @@ export const slugPart = (s) => String(s || '').toLowerCase().normalize('NFKD').r
 // "Test Striker" of Test FC, Team of the Week -> test-striker-test-fc-team-of-the-week.
 // Two cards that would still share one take the OVR as well, then the position,
 // then their slot in the club's book.
+// A card the game shows with no name on it goes by "Unknown", and its address
+// is a number instead: unknown-001, unknown-002, in a fixed order (league,
+// club, OVR, position, stats) so a card keeps its address from build to build.
+export const UNKNOWN = 'Unknown';
+const unknownOrder = (c) => [c.league || '', c.club || '', String(100 - c.ovr).padStart(3, '0'), c.pos?.[0] || '', JSON.stringify(c.stats || {})].join('|');
+
 export function cardSlugs(list) {
   const groups = {};
+  const out = {};
+  const unknown = (list || []).filter((c) => c.name === UNKNOWN).sort((a, b) => (unknownOrder(a) < unknownOrder(b) ? -1 : unknownOrder(a) > unknownOrder(b) ? 1 : 0));
+  unknown.forEach((c, i) => { out[c.id] = 'unknown-' + String(i + 1).padStart(3, '0'); });
   for (const c of list || []) {
+    if (c.name === UNKNOWN) continue;
     const key = [slugPart(c.name), slugPart(c.club), isSpecial(c.rarity) ? c.rarity : ''].filter(Boolean).join('-');
     (groups[key] = groups[key] || []).push(c);
   }
-  const out = {};
   for (const [key, group] of Object.entries(groups)) {
     for (const c of group) {
       let slug = key || 'card';

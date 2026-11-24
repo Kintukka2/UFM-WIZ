@@ -9,9 +9,9 @@ Stats are not required: a card shows ?? for a stat nobody captured.
 
 | | Cards |
 |---|---|
-| In the database | 2006 |
+| In the database | 2659 |
 | Waiting here for an OVR or a position | 0 |
-| Needs a human | 1 |
+| Needs a human | 0 |
 
 ## Waiting for an OVR or a position
 
@@ -19,6 +19,4 @@ None.
 
 ## Needs a human
 
-| Row | Player | Why |
-|---|---|---|
-| 2008 | — | No player name. |
+None.

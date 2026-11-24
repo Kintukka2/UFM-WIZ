@@ -14,9 +14,10 @@ as "not seen yet".
 | Argentina 1 | 30 of 30 | 864 | 1 to 114 | All accounted for | Done |
 | Australia 1 | 12 of 12 | 301 | 1 to 42 | All accounted for | Done |
 | Austria 1 | 12 of 12 | 330 | 1 to 48 | All accounted for | Done |
-| Belgium 1 | 18 of 18 | 511 | 1 to 70 | All accounted for | Done |
+| Belgium 1 | 18 of 18 | 512 | 1 to 70 | All accounted for | Done |
+| Brazil 1 | 20 of 20 | 652 | 1 to 80 | All accounted for | Done |
 
-Not started: Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
+Not started: Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
 ## Argentina 1
 
@@ -108,4 +109,29 @@ Not started: Brazil 1, Denmark 1, England 1, England 2, England 3, England 4, Fr
 | 15 | Zulte Waregem | 27 | 55 to 58 |
 | 16 | KV Kortrijk | 29 | 59 to 62 |
 | 17 | Lommel SK | 26 | 63 to 66 |
-| 18 | SK Beveren | 26 | 67 to 70 |
+| 18 | SK Beveren | 27 | 67 to 70 |
+
+## Brazil 1
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | SC Internacional | 29 | 1 to 4 |
+| 2 | Botafogo Rio de Janeiro | 31 | 5 to 8 |
+| 3 | EC Bahia | 32 | 9 to 12 |
+| 4 | EC Cruzeiro Belo Horizonte | 31 | 13 to 16 |
+| 5 | Clube Atlético Mineiro | 34 | 17 to 20 |
+| 6 | Flamengo Rio de Janeiro | 29 | 21 to 24 |
+| 7 | Fluminense Football Club | 35 | 25 to 28 |
+| 8 | FC São Paulo | 40 | 29 to 32 |
+| 9 | SE Palmeiras São Paulo | 25 | 33 to 36 |
+| 10 | Red Bull Bragantino | 36 | 37 to 40 |
+| 11 | Esporte Clube Vitória | 35 | 41 to 44 |
+| 12 | Vasco da Gama Rio de Janeiro | 33 | 45 to 48 |
+| 13 | Grêmio Porto Alegre | 33 | 49 to 52 |
+| 14 | Coritiba FC | 30 | 53 to 56 |
+| 15 | FC Santos | 32 | 57 to 60 |
+| 16 | Corinthians São Paulo | 33 | 61 to 64 |
+| 17 | Athletico Paranaense | 31 | 65 to 68 |
+| 18 | Mirassol FC (SP) | 32 | 69 to 72 |
+| 19 | Clube do Remo (PA) | 33 | 73 to 76 |
+| 20 | Chapecoense | 38 | 77 to 80 |

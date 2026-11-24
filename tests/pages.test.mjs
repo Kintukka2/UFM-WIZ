@@ -198,3 +198,11 @@ test('the Collection Book tracker counts pages by spreads of 23 and names the ne
   assert.match(progressMD(gap, books), /Book numbers not printed: #30, #31\. 1 of them are owned cards/);
   assert.match(md, /Not started: Test League 2\./);
 });
+
+test('a card the game shows with no name is Unknown, numbered unknown-001 up in a fixed order', async () => {
+  const { cardSlugs: slugsOf } = await import('../site/js/lib/carddb.js');
+  const u = (id, club, ovr) => ({ id, name: 'Unknown', league: 'Test League 1', club, ovr, pos: ['ST'], rarity: 'normal', stats: {} });
+  const cards = [u('a', 'Test FC', 50), u('b', 'Demo City', 60), { id: 'c', name: 'Test Striker', club: 'Test FC', ovr: 70, pos: ['ST'], rarity: 'normal' }];
+  assert.deepEqual(slugsOf(cards), { b: 'unknown-001', a: 'unknown-002', c: 'test-striker-test-fc' });
+  assert.deepEqual(slugsOf([...cards].reverse()), slugsOf(cards), 'the order the cards come in does not matter');
+});
