@@ -22,7 +22,7 @@ as "not seen yet".
 | England 3 | 24 of 24 | 653 | 1 to 94 | All accounted for | Done |
 | England 4 | 24 of 24 | 643 | 1 to 86 | All accounted for | Done |
 | France 1 | 18 of 18 | 474 | 1 to 68 | All accounted for | Done |
-| France 2 | 18 of 18 | 448 | 1 to 68 | 23 not seen yet | Done |
+| France 2 | 18 of 18 | 471 | 1 to 70 | All accounted for | Done |
 
 Not started: Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
@@ -312,10 +312,8 @@ Not started: Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Nethe
 | 11 | Nancy | 31 | 41 to 44 |
 | 12 | Paris Green | 25 | 45 to 48 |
 | 13 | Pau Yellow | 26 | 49 to 52 |
-| 14 | Reims | 5 | 53 to 54 |
-| 15 | Rodez Red | 25 | 55 to 58 |
-| 16 | Saint-Étienne | 26 | 59 to 62 |
-| 17 | Montbéliard Blue | 23 | 63 to 64 |
-| 18 | Dijon Red | 25 | 65 to 68 |
-
-Book numbers not printed: #38, #216, #294, #345, #346, #347, #348, #349, #350, #351, #352, #353, #354, #355, #356, #357, #358, #359, #360, #361, #362, #364, #365, #366, #367, #371, #378, #403. 5 of them are owned cards, which print none; the other 23 are cards still to send, most likely on a club's next spread.
+| 14 | Reims | 28 | 53 to 56 |
+| 15 | Rodez Red | 25 | 57 to 60 |
+| 16 | Saint-Étienne | 26 | 61 to 64 |
+| 17 | Montbéliard Blue | 23 | 65 to 66 |
+| 18 | Dijon Red | 25 | 67 to 70 |

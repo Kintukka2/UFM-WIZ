@@ -13,8 +13,8 @@ a release.
 ### Added
 
 - **France 1 and France 2 in the card database.** All eighteen France 1
-  club books (474 cards) and all eighteen of France 2's (448, one Reims spread
-  still to read) bring the database to 6,429. Twenty-six of the new cards carry
+  club books (474 cards) and all eighteen of France 2's (471) bring the
+  database to 6,452. Twenty-six of the new cards carry
   their full stats, and four of those show no name, so they are in as Unknown
   with the next four Unknown addresses.
 
