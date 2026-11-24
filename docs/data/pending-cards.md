@@ -9,7 +9,7 @@ Stats are not required: a card shows ?? for a stat nobody captured.
 
 | | Cards |
 |---|---|
-| In the database | 6452 |
+| In the database | 6735 |
 | Waiting here for an OVR or a position | 0 |
 | Needs a human | 0 |
 

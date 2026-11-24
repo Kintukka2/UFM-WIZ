@@ -23,8 +23,9 @@ as "not seen yet".
 | England 4 | 24 of 24 | 643 | 1 to 86 | All accounted for | Done |
 | France 1 | 18 of 18 | 474 | 1 to 68 | All accounted for | Done |
 | France 2 | 18 of 18 | 471 | 1 to 70 | All accounted for | Done |
+| Germany 1 | 10 of 18 | 283 | 1 to 40 | All accounted for | Leverkusen Red, from page 41 |
 
-Not started: Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
+Not started: Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
 ## Argentina 1
 
@@ -317,3 +318,26 @@ Not started: Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Nethe
 | 16 | Saint-Étienne | 26 | 61 to 64 |
 | 17 | Montbéliard Blue | 23 | 65 to 66 |
 | 18 | Dijon Red | 25 | 67 to 70 |
+
+## Germany 1
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Augsburg White | 28 | 1 to 4 |
+| 2 | Berlin Red | 30 | 5 to 8 |
+| 3 | Bremen Green | 31 | 9 to 12 |
+| 4 | Cologne Red | 29 | 13 to 16 |
+| 5 | Dortmund Yellow | 30 | 17 to 20 |
+| 6 | Frankfurt Black | 25 | 21 to 24 |
+| 7 | Freiburg Red | 27 | 25 to 28 |
+| 8 | Hamburg Blue | 26 | 29 to 32 |
+| 9 | Hoffenheim Blue | 28 | 33 to 36 |
+| 10 | Leipzig White | 29 | 37 to 40 |
+| 11 | Leverkusen Red | | next, from page 41 |
+| 12 | Mainz Red | |  |
+| 13 | Mönchengladbach Black | |  |
+| 14 | Munich Red | |  |
+| 15 | Stuttgart Red | |  |
+| 16 | Elversberg Green | |  |
+| 17 | Gelsenkirchen Blue | |  |
+| 18 | Paderborn Blue | |  |

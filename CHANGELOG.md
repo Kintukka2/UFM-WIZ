@@ -8,6 +8,16 @@ a release.
 
 ## [Unreleased]
 
+## [0.12.0] - Unreleased
+
+### Added
+
+- **The start of Germany 1 in the card database.** Ten of the league's
+  eighteen club books, Augsburg White to Leipzig White, add 283 cards and
+  bring the database to 6,735. Fifteen of them carry their full stats. The
+  game shows this league's players under its own spellings, and the database
+  keeps them as the game shows them.
+
 ## [0.11.0] - Unreleased
 
 ### Added
