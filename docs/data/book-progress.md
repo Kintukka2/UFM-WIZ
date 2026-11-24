@@ -17,7 +17,7 @@ as "not seen yet".
 | Belgium 1 | 18 of 18 | 512 | 1 to 70 | All accounted for | Done |
 | Brazil 1 | 20 of 20 | 652 | 1 to 80 | All accounted for | Done |
 | Denmark 1 | 12 of 12 | 321 | 1 to 46 | All accounted for | Done |
-| England 1 | 9 of 20 | 241 | 1 to 34 | All accounted for | Newcastle, from page 35 |
+| England 1 | 19 of 20 | 521 | 1 to 74 | All accounted for | Ipswich, from page 75 |
 
 Not started: England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
@@ -168,14 +168,14 @@ Not started: England 2, England 3, England 4, France 1, France 2, Germany 1, Ger
 | 7 | London Blue | 28 | 23 to 26 |
 | 8 | Manchester City | 25 | 27 to 30 |
 | 9 | Manchester Red | 30 | 31 to 34 |
-| 10 | Newcastle | | next, from page 35 |
-| 11 | North London Red | |  |
-| 12 | North London White | |  |
-| 13 | Nottingham Red | |  |
-| 14 | South London Red Blue | |  |
-| 15 | Sunderland | |  |
-| 16 | West London Red White | |  |
-| 17 | West London White | |  |
-| 18 | Coventry | |  |
-| 19 | Hull | |  |
-| 20 | Ipswich | |  |
+| 10 | Newcastle | 26 | 35 to 38 |
+| 11 | North London Red | 25 | 39 to 42 |
+| 12 | North London White | 28 | 43 to 46 |
+| 13 | Nottingham Red | 24 | 47 to 50 |
+| 14 | South London Red Blue | 30 | 51 to 54 |
+| 15 | Sunderland | 29 | 55 to 58 |
+| 16 | West London Red White | 29 | 59 to 62 |
+| 17 | West London White | 27 | 63 to 66 |
+| 18 | Coventry | 28 | 67 to 70 |
+| 19 | Hull | 34 | 71 to 74 |
+| 20 | Ipswich | | next, from page 75 |
