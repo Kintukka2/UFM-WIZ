@@ -12,10 +12,11 @@ a release.
 
 ### Added
 
-- **The start of France 1 in the card database.** Eleven of the league's
-  eighteen club books, Angers to Nice, add 290 cards and bring the database to
-  5,797. Thirteen of them carry their full stats, and three of those show no
-  name, so they are in as Unknown with the next three Unknown addresses.
+- **France 1 in the card database, and the start of France 2.** All
+  eighteen France 1 club books (474 cards) and three of France 2's (82) bring
+  the database to 6,063. Twenty-two of the new cards carry their full stats,
+  and three of those show no name, so they are in as Unknown with the next
+  three Unknown addresses.
 
 ## [0.10.0] - Unreleased
 

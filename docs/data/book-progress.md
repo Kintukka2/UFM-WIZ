@@ -21,9 +21,10 @@ as "not seen yet".
 | England 2 | 24 of 24 | 682 | 1 to 96 | All accounted for | Done |
 | England 3 | 24 of 24 | 653 | 1 to 94 | All accounted for | Done |
 | England 4 | 24 of 24 | 643 | 1 to 86 | All accounted for | Done |
-| France 1 | 11 of 18 | 290 | 1 to 40 | All accounted for | Paris Blue Red, from page 41 |
+| France 1 | 18 of 18 | 474 | 1 to 68 | All accounted for | Done |
+| France 2 | 3 of 18 | 82 | 1 to 12 | All accounted for | Boulogne-sur-Mer, from page 13 |
 
-Not started: France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
+Not started: Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
 ## Argentina 1
 
@@ -286,10 +287,33 @@ Not started: France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Ital
 | 9 | Marseille | 22 | 31 to 32 |
 | 10 | Monaco | 25 | 33 to 36 |
 | 11 | Nice | 30 | 37 to 40 |
-| 12 | Paris Blue Red | | next, from page 41 |
-| 13 | Paris Blue | |  |
-| 14 | Rennes | |  |
-| 15 | Strasbourg | |  |
-| 16 | Toulouse | |  |
-| 17 | Le Mans | |  |
-| 18 | Troyes Blue | |  |
+| 12 | Paris Blue Red | 24 | 41 to 44 |
+| 13 | Paris Blue | 25 | 45 to 48 |
+| 14 | Rennes | 26 | 49 to 52 |
+| 15 | Strasbourg | 29 | 53 to 56 |
+| 16 | Toulouse | 25 | 57 to 60 |
+| 17 | Le Mans | 29 | 61 to 64 |
+| 18 | Troyes Blue | 26 | 65 to 68 |
+
+## France 2
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Metz | 25 | 1 to 4 |
+| 2 | Nantes | 27 | 5 to 8 |
+| 3 | Annecy Red | 30 | 9 to 12 |
+| 4 | Boulogne-sur-Mer | | next, from page 13 |
+| 5 | Clermont | |  |
+| 6 | Dunkerque Blue | |  |
+| 7 | Grenoble | |  |
+| 8 | Guingamp | |  |
+| 9 | Laval | |  |
+| 10 | Montpellier | |  |
+| 11 | Nancy | |  |
+| 12 | Paris Green | |  |
+| 13 | Pau Yellow | |  |
+| 14 | Reims | |  |
+| 15 | Rodez Red | |  |
+| 16 | Saint-Étienne | |  |
+| 17 | Montbéliard Blue | |  |
+| 18 | Dijon Red | |  |
