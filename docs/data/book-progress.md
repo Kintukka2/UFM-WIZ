@@ -16,8 +16,13 @@ as "not seen yet".
 | Austria 1 | 12 of 12 | 330 | 1 to 48 | All accounted for | Done |
 | Belgium 1 | 18 of 18 | 512 | 1 to 70 | All accounted for | Done |
 | Brazil 1 | 20 of 20 | 652 | 1 to 80 | All accounted for | Done |
+| Denmark 1 | 12 of 12 | 321 | 1 to 46 | All accounted for | Done |
+| England 1 | 20 of 20 | 549 | 1 to 78 | All accounted for | Done |
+| England 2 | 24 of 24 | 682 | 1 to 96 | All accounted for | Done |
+| England 3 | 12 of 24 | 290 | 1 to 40 | 363 not seen yet | Burton, from page 41 |
+| England 4 | 24 of 24 | 643 | 1 to 86 | All accounted for | Done |
 
-Not started: Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
+Not started: France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
 ## Argentina 1
 
@@ -135,3 +140,134 @@ Not started: Denmark 1, England 1, England 2, England 3, England 4, France 1, Fr
 | 18 | Mirassol FC (SP) | 32 | 69 to 72 |
 | 19 | Clube do Remo (PA) | 33 | 73 to 76 |
 | 20 | Chapecoense | 38 | 77 to 80 |
+
+## Denmark 1
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Aarhus White | 26 | 1 to 4 |
+| 2 | Brøndby Yellow | 26 | 5 to 8 |
+| 3 | Copenhagen White | 25 | 9 to 12 |
+| 4 | Farum Red | 29 | 13 to 16 |
+| 5 | Herning Red | 28 | 17 to 20 |
+| 6 | Odense Blue | 28 | 21 to 24 |
+| 7 | Randers Blue | 30 | 25 to 28 |
+| 8 | Silkeborg Red | 26 | 29 to 32 |
+| 9 | Sønderjyske Blue | 29 | 33 to 36 |
+| 10 | Viborg Green | 24 | 37 to 40 |
+| 11 | Lyngby Blue | 22 | 41 to 42 |
+| 12 | Horsens Yellow | 28 | 43 to 46 |
+
+## England 1
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Birmingham Claret | 27 | 1 to 4 |
+| 2 | Bournemouth | 29 | 5 to 8 |
+| 3 | Brighton | 30 | 9 to 12 |
+| 4 | Leeds | 24 | 13 to 16 |
+| 5 | Liverpool Blue | 21 | 17 to 18 |
+| 6 | Liverpool Red | 27 | 19 to 22 |
+| 7 | London Blue | 28 | 23 to 26 |
+| 8 | Manchester City | 25 | 27 to 30 |
+| 9 | Manchester Red | 30 | 31 to 34 |
+| 10 | Newcastle | 26 | 35 to 38 |
+| 11 | North London Red | 25 | 39 to 42 |
+| 12 | North London White | 28 | 43 to 46 |
+| 13 | Nottingham Red | 24 | 47 to 50 |
+| 14 | South London Red Blue | 30 | 51 to 54 |
+| 15 | Sunderland | 29 | 55 to 58 |
+| 16 | West London Red White | 29 | 59 to 62 |
+| 17 | West London White | 27 | 63 to 66 |
+| 18 | Coventry | 28 | 67 to 70 |
+| 19 | Hull | 34 | 71 to 74 |
+| 20 | Ipswich | 28 | 75 to 78 |
+
+## England 2
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Burnley | 33 | 1 to 4 |
+| 2 | East London Claret | 28 | 5 to 8 |
+| 3 | Wolverhampton | 28 | 9 to 12 |
+| 4 | Birmingham Blue | 27 | 13 to 16 |
+| 5 | Blackburn | 25 | 17 to 20 |
+| 6 | Bristol Red | 27 | 21 to 24 |
+| 7 | Derby | 30 | 25 to 28 |
+| 8 | Middlesbrough | 29 | 29 to 32 |
+| 9 | Norwich | 31 | 33 to 36 |
+| 10 | Portsmouth | 37 | 37 to 40 |
+| 11 | Preston | 28 | 41 to 44 |
+| 12 | Sheffield Red White | 27 | 45 to 48 |
+| 13 | South East London Blue | 31 | 49 to 52 |
+| 14 | South East London Red | 30 | 53 to 56 |
+| 15 | Southampton | 26 | 57 to 60 |
+| 16 | Stoke Red White | 27 | 61 to 64 |
+| 17 | Swansea | 28 | 65 to 68 |
+| 18 | Watford | 28 | 69 to 72 |
+| 19 | West Bromwich | 24 | 73 to 76 |
+| 20 | West London White Blue | 27 | 77 to 80 |
+| 21 | Wrexham | 30 | 81 to 84 |
+| 22 | Bolton | 27 | 85 to 88 |
+| 23 | Cardiff | 25 | 89 to 92 |
+| 24 | Lincoln | 29 | 93 to 96 |
+
+## England 3
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Leicester | 27 | 1 to 4 |
+| 2 | Oxford | 27 | 5 to 8 |
+| 3 | Sheffield Blue White | 28 | 9 to 12 |
+| 4 | Barnsley | 23 | 13 to 14 |
+| 5 | Blackpool | 25 | 15 to 18 |
+| 6 | Bradford | 23 | 19 to 20 |
+| 7 | Burton | | next, from page 21 |
+| 8 | Doncaster | |  |
+| 9 | East London Red | |  |
+| 10 | Huddersfield | |  |
+| 11 | Luton | |  |
+| 12 | Mansfield | |  |
+| 13 | Peterborough | |  |
+| 14 | Plymouth | |  |
+| 15 | Reading | |  |
+| 16 | Stevenage | |  |
+| 17 | Stockport | |  |
+| 18 | Wigan | |  |
+| 19 | Wimbledon | 5 | 21 to 22 |
+| 20 | Wycombe | 25 | 23 to 26 |
+| 21 | Bromley | 23 | 27 to 28 |
+| 22 | Cambridge | 26 | 29 to 32 |
+| 23 | Milton Keynes | 27 | 33 to 36 |
+| 24 | Nottingham Black White | 31 | 37 to 40 |
+
+Book numbers not printed: #61, #114, #153, #154, #155, #157, #158, #159, #160, #161, #162, #163, #164, #165, #166, #167, #168, #169, #170, #171, #172, #173, #174, #175, #176, #177, #178, #179, #180, #181, #182, #183, #184, #185, #186, #187, #188, #189, #190, #191, #192, #193, #194, #195, #196, #197, #198, #199, #200, #201, #202, #203, #204, #205, #206, #207, #208, #209, #210, #211, #212, #213, #214, #215, #216, #217, #218, #219, #220, #221, #222, #223, #224, #225, #226, #227, #228, #229, #230, #231, #232, #233, #234, #235, #236, #237, #238, #239, #240, #241, #242, #243, #244, #245, #246, #247, #248, #249, #250, #251, #252, #253, #254, #255, #256, #257, #258, #259, #260, #261, #262, #263, #264, #265, #266, #267, #268, #269, #270, #271, #272, #273, #274, #275, #276, #277, #278, #279, #280, #281, #282, #283, #284, #285, #286, #287, #288, #289, #290, #291, #292, #293, #294, #295, #296, #297, #298, #299, #300, #301, #302, #303, #304, #305, #306, #307, #308, #309, #310, #311, #312, #313, #314, #315, #316, #317, #318, #319, #320, #321, #322, #323, #324, #325, #326, #327, #328, #329, #330, #331, #332, #333, #334, #335, #336, #337, #338, #339, #340, #341, #342, #343, #344, #345, #346, #347, #348, #349, #350, #351, #352, #353, #354, #355, #356, #357, #358, #359, #360, #361, #362, #363, #364, #365, #366, #367, #368, #369, #370, #371, #372, #373, #374, #375, #376, #377, #378, #379, #380, #381, #382, #383, #384, #385, #386, #387, #388, #389, #390, #391, #392, #393, #394, #395, #396, #397, #398, #399, #400, #401, #402, #403, #404, #405, #406, #407, #408, #409, #410, #411, #412, #413, #414, #415, #416, #417, #418, #419, #420, #421, #422, #423, #424, #425, #426, #427, #428, #429, #430, #431, #432, #433, #434, #435, #436, #437, #438, #439, #440, #441, #442, #443, #444, #445, #446, #447, #448, #449, #450, #451, #452, #453, #454, #455, #456, #457, #458, #459, #460, #461, #462, #463, #464, #465, #466, #467, #468, #469, #470, #471, #472, #473, #474, #475, #476, #477, #478, #479, #480, #481, #482, #483, #484, #485, #486, #487, #488, #489, #490, #491, #492, #493, #494, #495, #496, #497, #498, #499, #500, #501, #502, #503, #504, #505, #506, #507, #508, #513, #514, #564, #565, #566, #567, #568, #569. 2 of them are owned cards, which print none; the other 363 are cards still to send, most likely on a club's next spread.
+
+## England 4
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Exeter | 25 | 1 to 4 |
+| 2 | Northampton | 28 | 5 to 8 |
+| 3 | Rotherham | 26 | 9 to 12 |
+| 4 | Stoke Black White | 29 | 13 to 16 |
+| 5 | Accrington | 25 | 17 to 20 |
+| 6 | Barnet | 23 | 21 to 22 |
+| 7 | Bristol Blue White | 27 | 23 to 26 |
+| 8 | Cheltenham | 21 | 27 to 28 |
+| 9 | Chesterfield | 30 | 29 to 32 |
+| 10 | Colchester Blue | 23 | 33 to 34 |
+| 11 | Crawley | 28 | 35 to 38 |
+| 12 | Crewe | 23 | 39 to 40 |
+| 13 | Fleetwood | 28 | 41 to 44 |
+| 14 | Gillingham | 30 | 45 to 48 |
+| 15 | Grimsby | 29 | 49 to 52 |
+| 16 | Newport | 29 | 53 to 56 |
+| 17 | Oldham | 25 | 57 to 60 |
+| 18 | Salford | 29 | 61 to 64 |
+| 19 | Shrewsbury | 23 | 65 to 66 |
+| 20 | Swindon | 30 | 67 to 70 |
+| 21 | Tranmere | 29 | 71 to 74 |
+| 22 | Walsall | 26 | 75 to 78 |
+| 23 | Rochdale Blue | 29 | 79 to 82 |
+| 24 | York Red Blue | 28 | 83 to 86 |

@@ -80,3 +80,9 @@ test('every word the site shows reads in our voice', async () => {
   assert.ok(count > 20, `the scan reached the site (${count} files)`);
   assert.deepEqual(problems.map((p) => `${p.file} [${p.rule.id}] ${p.text.slice(0, 90)}`), []);
 });
+
+test('a player whose surname is a caught word passes only as the name itself', () => {
+  assert.deepEqual(faultsIn('Cash'), []);
+  assert.deepEqual(faultsIn('· Cash'), []);
+  assert.ok(faultsIn('Earn cash in the Weekend League.').length, 'the word in a sentence still fires');
+});
