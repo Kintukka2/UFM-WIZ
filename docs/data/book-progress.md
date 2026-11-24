@@ -17,9 +17,10 @@ as "not seen yet".
 | Belgium 1 | 18 of 18 | 512 | 1 to 70 | All accounted for | Done |
 | Brazil 1 | 20 of 20 | 652 | 1 to 80 | All accounted for | Done |
 | Denmark 1 | 12 of 12 | 321 | 1 to 46 | All accounted for | Done |
-| England 1 | 19 of 20 | 521 | 1 to 74 | All accounted for | Ipswich, from page 75 |
+| England 1 | 20 of 20 | 549 | 1 to 78 | All accounted for | Done |
+| England 2 | 9 of 24 | 258 | 1 to 36 | All accounted for | Portsmouth, from page 37 |
 
-Not started: England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
+Not started: England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
 ## Argentina 1
 
@@ -178,4 +179,33 @@ Not started: England 2, England 3, England 4, France 1, France 2, Germany 1, Ger
 | 17 | West London White | 27 | 63 to 66 |
 | 18 | Coventry | 28 | 67 to 70 |
 | 19 | Hull | 34 | 71 to 74 |
-| 20 | Ipswich | | next, from page 75 |
+| 20 | Ipswich | 28 | 75 to 78 |
+
+## England 2
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Burnley | 33 | 1 to 4 |
+| 2 | East London Claret | 28 | 5 to 8 |
+| 3 | Wolverhampton | 28 | 9 to 12 |
+| 4 | Birmingham Blue | 27 | 13 to 16 |
+| 5 | Blackburn | 25 | 17 to 20 |
+| 6 | Bristol Red | 27 | 21 to 24 |
+| 7 | Derby | 30 | 25 to 28 |
+| 8 | Middlesbrough | 29 | 29 to 32 |
+| 9 | Norwich | 31 | 33 to 36 |
+| 10 | Portsmouth | | next, from page 37 |
+| 11 | Preston | |  |
+| 12 | Sheffield Red White | |  |
+| 13 | South East London Blue | |  |
+| 14 | South East London Red | |  |
+| 15 | Southampton | |  |
+| 16 | Stoke Red White | |  |
+| 17 | Swansea | |  |
+| 18 | Watford | |  |
+| 19 | West Bromwich | |  |
+| 20 | West London White Blue | |  |
+| 21 | Wrexham | |  |
+| 22 | Bolton | |  |
+| 23 | Cardiff | |  |
+| 24 | Lincoln | |  |
