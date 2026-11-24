@@ -12,11 +12,11 @@ a release.
 
 ### Added
 
-- **France 1 in the card database, and the start of France 2.** All
-  eighteen France 1 club books (474 cards) and three of France 2's (82) bring
-  the database to 6,063. Twenty-two of the new cards carry their full stats,
-  and three of those show no name, so they are in as Unknown with the next
-  three Unknown addresses.
+- **France 1 and France 2 in the card database.** All eighteen France 1
+  club books (474 cards) and all eighteen of France 2's (448, one Reims spread
+  still to read) bring the database to 6,429. Twenty-six of the new cards carry
+  their full stats, and four of those show no name, so they are in as Unknown
+  with the next four Unknown addresses.
 
 ## [0.10.0] - Unreleased
 
