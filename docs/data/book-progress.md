@@ -18,7 +18,7 @@ as "not seen yet".
 | Brazil 1 | 20 of 20 | 652 | 1 to 80 | All accounted for | Done |
 | Denmark 1 | 12 of 12 | 321 | 1 to 46 | All accounted for | Done |
 | England 1 | 20 of 20 | 549 | 1 to 78 | All accounted for | Done |
-| England 2 | 9 of 24 | 258 | 1 to 36 | All accounted for | Portsmouth, from page 37 |
+| England 2 | 19 of 24 | 544 | 1 to 76 | All accounted for | West London White Blue, from page 77 |
 
 Not started: England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
@@ -194,17 +194,17 @@ Not started: England 3, England 4, France 1, France 2, Germany 1, Germany 2, Ger
 | 7 | Derby | 30 | 25 to 28 |
 | 8 | Middlesbrough | 29 | 29 to 32 |
 | 9 | Norwich | 31 | 33 to 36 |
-| 10 | Portsmouth | | next, from page 37 |
-| 11 | Preston | |  |
-| 12 | Sheffield Red White | |  |
-| 13 | South East London Blue | |  |
-| 14 | South East London Red | |  |
-| 15 | Southampton | |  |
-| 16 | Stoke Red White | |  |
-| 17 | Swansea | |  |
-| 18 | Watford | |  |
-| 19 | West Bromwich | |  |
-| 20 | West London White Blue | |  |
+| 10 | Portsmouth | 37 | 37 to 40 |
+| 11 | Preston | 28 | 41 to 44 |
+| 12 | Sheffield Red White | 27 | 45 to 48 |
+| 13 | South East London Blue | 31 | 49 to 52 |
+| 14 | South East London Red | 30 | 53 to 56 |
+| 15 | Southampton | 26 | 57 to 60 |
+| 16 | Stoke Red White | 27 | 61 to 64 |
+| 17 | Swansea | 28 | 65 to 68 |
+| 18 | Watford | 28 | 69 to 72 |
+| 19 | West Bromwich | 24 | 73 to 76 |
+| 20 | West London White Blue | | next, from page 77 |
 | 21 | Wrexham | |  |
 | 22 | Bolton | |  |
 | 23 | Cardiff | |  |
