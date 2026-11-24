@@ -61,7 +61,13 @@ export const ALLOWED = [
 ];
 
 const plain = (s) => String(s).replace(/&nbsp;| /g, ' ').replace(/&#39;|&rsquo;/g, "'").replace(/&amp;/g, '&');
-export const allowed = (text) => ALLOWED.some((a) => plain(text).toLowerCase().includes(a.toLowerCase()));
+// A player's name as the card prints it, matched whole: a surname that is also
+// a word the rules catch ("Cash") is the player's name, not our prose. Whole
+// text only, so the same word in a sentence still fires.
+export const NAMES = ['Cash'];
+const bare = (s) => plain(s).replace(/^[\s·•|,-]+|[\s·•|,-]+$/g, '');
+export const allowed = (text) => NAMES.includes(bare(text))
+  || ALLOWED.some((a) => plain(text).toLowerCase().includes(a.toLowerCase()));
 
 export function faultsIn(text, rules = RULES) {
   if (allowed(text)) return [];

@@ -8,6 +8,14 @@ a release.
 
 ## [Unreleased]
 
+## [0.9.0] - Unreleased
+
+### Added
+
+- **Denmark 1 in the card database, and the start of England 1.** All twelve
+  Denmark 1 club books (321 cards) and nine of England 1's twenty (241) bring
+  the database to 3,221. Nine of the new cards carry their full stats.
+
 ## [0.8.0] - Unreleased
 
 ### Added

@@ -16,8 +16,10 @@ as "not seen yet".
 | Austria 1 | 12 of 12 | 330 | 1 to 48 | All accounted for | Done |
 | Belgium 1 | 18 of 18 | 512 | 1 to 70 | All accounted for | Done |
 | Brazil 1 | 20 of 20 | 652 | 1 to 80 | All accounted for | Done |
+| Denmark 1 | 12 of 12 | 321 | 1 to 46 | All accounted for | Done |
+| England 1 | 9 of 20 | 241 | 1 to 34 | All accounted for | Newcastle, from page 35 |
 
-Not started: Denmark 1, England 1, England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
+Not started: England 2, England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
 ## Argentina 1
 
@@ -135,3 +137,45 @@ Not started: Denmark 1, England 1, England 2, England 3, England 4, France 1, Fr
 | 18 | Mirassol FC (SP) | 32 | 69 to 72 |
 | 19 | Clube do Remo (PA) | 33 | 73 to 76 |
 | 20 | Chapecoense | 38 | 77 to 80 |
+
+## Denmark 1
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Aarhus White | 26 | 1 to 4 |
+| 2 | Brøndby Yellow | 26 | 5 to 8 |
+| 3 | Copenhagen White | 25 | 9 to 12 |
+| 4 | Farum Red | 29 | 13 to 16 |
+| 5 | Herning Red | 28 | 17 to 20 |
+| 6 | Odense Blue | 28 | 21 to 24 |
+| 7 | Randers Blue | 30 | 25 to 28 |
+| 8 | Silkeborg Red | 26 | 29 to 32 |
+| 9 | Sønderjyske Blue | 29 | 33 to 36 |
+| 10 | Viborg Green | 24 | 37 to 40 |
+| 11 | Lyngby Blue | 22 | 41 to 42 |
+| 12 | Horsens Yellow | 28 | 43 to 46 |
+
+## England 1
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Birmingham Claret | 27 | 1 to 4 |
+| 2 | Bournemouth | 29 | 5 to 8 |
+| 3 | Brighton | 30 | 9 to 12 |
+| 4 | Leeds | 24 | 13 to 16 |
+| 5 | Liverpool Blue | 21 | 17 to 18 |
+| 6 | Liverpool Red | 27 | 19 to 22 |
+| 7 | London Blue | 28 | 23 to 26 |
+| 8 | Manchester City | 25 | 27 to 30 |
+| 9 | Manchester Red | 30 | 31 to 34 |
+| 10 | Newcastle | | next, from page 35 |
+| 11 | North London Red | |  |
+| 12 | North London White | |  |
+| 13 | Nottingham Red | |  |
+| 14 | South London Red Blue | |  |
+| 15 | Sunderland | |  |
+| 16 | West London Red White | |  |
+| 17 | West London White | |  |
+| 18 | Coventry | |  |
+| 19 | Hull | |  |
+| 20 | Ipswich | |  |
