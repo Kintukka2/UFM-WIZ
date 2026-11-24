@@ -19,9 +19,10 @@ as "not seen yet".
 | Denmark 1 | 12 of 12 | 321 | 1 to 46 | All accounted for | Done |
 | England 1 | 20 of 20 | 549 | 1 to 78 | All accounted for | Done |
 | England 2 | 24 of 24 | 682 | 1 to 96 | All accounted for | Done |
-| England 3 | 6 of 24 | 153 | 1 to 20 | 3 not seen yet | Burton, from page 21 |
+| England 3 | 12 of 24 | 290 | 1 to 40 | 363 not seen yet | Burton, from page 41 |
+| England 4 | 24 of 24 | 643 | 1 to 86 | All accounted for | Done |
 
-Not started: England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
+Not started: France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
 ## Argentina 1
 
@@ -233,11 +234,40 @@ Not started: England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ire
 | 16 | Stevenage | |  |
 | 17 | Stockport | |  |
 | 18 | Wigan | |  |
-| 19 | Wimbledon | |  |
-| 20 | Wycombe | |  |
-| 21 | Bromley | |  |
-| 22 | Cambridge | |  |
-| 23 | Milton Keynes | |  |
-| 24 | Nottingham Black White | |  |
+| 19 | Wimbledon | 5 | 21 to 22 |
+| 20 | Wycombe | 25 | 23 to 26 |
+| 21 | Bromley | 23 | 27 to 28 |
+| 22 | Cambridge | 26 | 29 to 32 |
+| 23 | Milton Keynes | 27 | 33 to 36 |
+| 24 | Nottingham Black White | 31 | 37 to 40 |
 
-Book numbers not printed: #61, #114, #153, #154, #155. 2 of them are owned cards, which print none; the other 3 are cards still to send, most likely on a club's next spread.
+Book numbers not printed: #61, #114, #153, #154, #155, #157, #158, #159, #160, #161, #162, #163, #164, #165, #166, #167, #168, #169, #170, #171, #172, #173, #174, #175, #176, #177, #178, #179, #180, #181, #182, #183, #184, #185, #186, #187, #188, #189, #190, #191, #192, #193, #194, #195, #196, #197, #198, #199, #200, #201, #202, #203, #204, #205, #206, #207, #208, #209, #210, #211, #212, #213, #214, #215, #216, #217, #218, #219, #220, #221, #222, #223, #224, #225, #226, #227, #228, #229, #230, #231, #232, #233, #234, #235, #236, #237, #238, #239, #240, #241, #242, #243, #244, #245, #246, #247, #248, #249, #250, #251, #252, #253, #254, #255, #256, #257, #258, #259, #260, #261, #262, #263, #264, #265, #266, #267, #268, #269, #270, #271, #272, #273, #274, #275, #276, #277, #278, #279, #280, #281, #282, #283, #284, #285, #286, #287, #288, #289, #290, #291, #292, #293, #294, #295, #296, #297, #298, #299, #300, #301, #302, #303, #304, #305, #306, #307, #308, #309, #310, #311, #312, #313, #314, #315, #316, #317, #318, #319, #320, #321, #322, #323, #324, #325, #326, #327, #328, #329, #330, #331, #332, #333, #334, #335, #336, #337, #338, #339, #340, #341, #342, #343, #344, #345, #346, #347, #348, #349, #350, #351, #352, #353, #354, #355, #356, #357, #358, #359, #360, #361, #362, #363, #364, #365, #366, #367, #368, #369, #370, #371, #372, #373, #374, #375, #376, #377, #378, #379, #380, #381, #382, #383, #384, #385, #386, #387, #388, #389, #390, #391, #392, #393, #394, #395, #396, #397, #398, #399, #400, #401, #402, #403, #404, #405, #406, #407, #408, #409, #410, #411, #412, #413, #414, #415, #416, #417, #418, #419, #420, #421, #422, #423, #424, #425, #426, #427, #428, #429, #430, #431, #432, #433, #434, #435, #436, #437, #438, #439, #440, #441, #442, #443, #444, #445, #446, #447, #448, #449, #450, #451, #452, #453, #454, #455, #456, #457, #458, #459, #460, #461, #462, #463, #464, #465, #466, #467, #468, #469, #470, #471, #472, #473, #474, #475, #476, #477, #478, #479, #480, #481, #482, #483, #484, #485, #486, #487, #488, #489, #490, #491, #492, #493, #494, #495, #496, #497, #498, #499, #500, #501, #502, #503, #504, #505, #506, #507, #508, #513, #514, #564, #565, #566, #567, #568, #569. 2 of them are owned cards, which print none; the other 363 are cards still to send, most likely on a club's next spread.
+
+## England 4
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Exeter | 25 | 1 to 4 |
+| 2 | Northampton | 28 | 5 to 8 |
+| 3 | Rotherham | 26 | 9 to 12 |
+| 4 | Stoke Black White | 29 | 13 to 16 |
+| 5 | Accrington | 25 | 17 to 20 |
+| 6 | Barnet | 23 | 21 to 22 |
+| 7 | Bristol Blue White | 27 | 23 to 26 |
+| 8 | Cheltenham | 21 | 27 to 28 |
+| 9 | Chesterfield | 30 | 29 to 32 |
+| 10 | Colchester Blue | 23 | 33 to 34 |
+| 11 | Crawley | 28 | 35 to 38 |
+| 12 | Crewe | 23 | 39 to 40 |
+| 13 | Fleetwood | 28 | 41 to 44 |
+| 14 | Gillingham | 30 | 45 to 48 |
+| 15 | Grimsby | 29 | 49 to 52 |
+| 16 | Newport | 29 | 53 to 56 |
+| 17 | Oldham | 25 | 57 to 60 |
+| 18 | Salford | 29 | 61 to 64 |
+| 19 | Shrewsbury | 23 | 65 to 66 |
+| 20 | Swindon | 30 | 67 to 70 |
+| 21 | Tranmere | 29 | 71 to 74 |
+| 22 | Walsall | 26 | 75 to 78 |
+| 23 | Rochdale Blue | 29 | 79 to 82 |
+| 24 | York Red Blue | 28 | 83 to 86 |
