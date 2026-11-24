@@ -21,8 +21,10 @@ as "not seen yet".
 | England 2 | 24 of 24 | 682 | 1 to 96 | All accounted for | Done |
 | England 3 | 24 of 24 | 653 | 1 to 94 | All accounted for | Done |
 | England 4 | 24 of 24 | 643 | 1 to 86 | All accounted for | Done |
+| France 1 | 18 of 18 | 474 | 1 to 68 | All accounted for | Done |
+| France 2 | 18 of 18 | 471 | 1 to 70 | All accounted for | Done |
 
-Not started: France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
+Not started: Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
 ## Argentina 1
 
@@ -269,3 +271,49 @@ Not started: France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Ita
 | 22 | Walsall | 26 | 75 to 78 |
 | 23 | Rochdale Blue | 29 | 79 to 82 |
 | 24 | York Red Blue | 28 | 83 to 86 |
+
+## France 1
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Angers | 22 | 1 to 2 |
+| 2 | Auxerre | 32 | 3 to 6 |
+| 3 | Brest | 24 | 7 to 10 |
+| 4 | Le Havre | 25 | 11 to 14 |
+| 5 | Lens | 29 | 15 to 18 |
+| 6 | Lille | 27 | 19 to 22 |
+| 7 | Lorient | 25 | 23 to 26 |
+| 8 | Lyon | 29 | 27 to 30 |
+| 9 | Marseille | 22 | 31 to 32 |
+| 10 | Monaco | 25 | 33 to 36 |
+| 11 | Nice | 30 | 37 to 40 |
+| 12 | Paris Blue Red | 24 | 41 to 44 |
+| 13 | Paris Blue | 25 | 45 to 48 |
+| 14 | Rennes | 26 | 49 to 52 |
+| 15 | Strasbourg | 29 | 53 to 56 |
+| 16 | Toulouse | 25 | 57 to 60 |
+| 17 | Le Mans | 29 | 61 to 64 |
+| 18 | Troyes Blue | 26 | 65 to 68 |
+
+## France 2
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Metz | 25 | 1 to 4 |
+| 2 | Nantes | 27 | 5 to 8 |
+| 3 | Annecy Red | 30 | 9 to 12 |
+| 4 | Boulogne-sur-Mer | 27 | 13 to 16 |
+| 5 | Clermont | 28 | 17 to 20 |
+| 6 | Dunkerque Blue | 24 | 21 to 24 |
+| 7 | Grenoble | 26 | 25 to 28 |
+| 8 | Guingamp | 24 | 29 to 32 |
+| 9 | Laval | 25 | 33 to 36 |
+| 10 | Montpellier | 26 | 37 to 40 |
+| 11 | Nancy | 31 | 41 to 44 |
+| 12 | Paris Green | 25 | 45 to 48 |
+| 13 | Pau Yellow | 26 | 49 to 52 |
+| 14 | Reims | 28 | 53 to 56 |
+| 15 | Rodez Red | 25 | 57 to 60 |
+| 16 | Saint-Étienne | 26 | 61 to 64 |
+| 17 | Montbéliard Blue | 23 | 65 to 66 |
+| 18 | Dijon Red | 25 | 67 to 70 |
