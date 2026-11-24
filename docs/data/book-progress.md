@@ -18,9 +18,10 @@ as "not seen yet".
 | Brazil 1 | 20 of 20 | 652 | 1 to 80 | All accounted for | Done |
 | Denmark 1 | 12 of 12 | 321 | 1 to 46 | All accounted for | Done |
 | England 1 | 20 of 20 | 549 | 1 to 78 | All accounted for | Done |
-| England 2 | 19 of 24 | 544 | 1 to 76 | All accounted for | West London White Blue, from page 77 |
+| England 2 | 24 of 24 | 682 | 1 to 96 | All accounted for | Done |
+| England 3 | 6 of 24 | 153 | 1 to 20 | 3 not seen yet | Burton, from page 21 |
 
-Not started: England 3, England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
+Not started: England 4, France 1, France 2, Germany 1, Germany 2, Germany 3, Ireland 1, Italy 1, Italy 2, Netherlands 1, Norway 1, Poland 1, Portugal 1, Romania 1, Scotland 1, South Korea 1, Spain 1, Spain 2, Sweden 1, Swiss 1, Turkey 1.
 
 ## Argentina 1
 
@@ -204,8 +205,39 @@ Not started: England 3, England 4, France 1, France 2, Germany 1, Germany 2, Ger
 | 17 | Swansea | 28 | 65 to 68 |
 | 18 | Watford | 28 | 69 to 72 |
 | 19 | West Bromwich | 24 | 73 to 76 |
-| 20 | West London White Blue | | next, from page 77 |
-| 21 | Wrexham | |  |
-| 22 | Bolton | |  |
-| 23 | Cardiff | |  |
-| 24 | Lincoln | |  |
+| 20 | West London White Blue | 27 | 77 to 80 |
+| 21 | Wrexham | 30 | 81 to 84 |
+| 22 | Bolton | 27 | 85 to 88 |
+| 23 | Cardiff | 25 | 89 to 92 |
+| 24 | Lincoln | 29 | 93 to 96 |
+
+## England 3
+
+| # | Club | Cards | Pages |
+|---|---|---|---|
+| 1 | Leicester | 27 | 1 to 4 |
+| 2 | Oxford | 27 | 5 to 8 |
+| 3 | Sheffield Blue White | 28 | 9 to 12 |
+| 4 | Barnsley | 23 | 13 to 14 |
+| 5 | Blackpool | 25 | 15 to 18 |
+| 6 | Bradford | 23 | 19 to 20 |
+| 7 | Burton | | next, from page 21 |
+| 8 | Doncaster | |  |
+| 9 | East London Red | |  |
+| 10 | Huddersfield | |  |
+| 11 | Luton | |  |
+| 12 | Mansfield | |  |
+| 13 | Peterborough | |  |
+| 14 | Plymouth | |  |
+| 15 | Reading | |  |
+| 16 | Stevenage | |  |
+| 17 | Stockport | |  |
+| 18 | Wigan | |  |
+| 19 | Wimbledon | |  |
+| 20 | Wycombe | |  |
+| 21 | Bromley | |  |
+| 22 | Cambridge | |  |
+| 23 | Milton Keynes | |  |
+| 24 | Nottingham Black White | |  |
+
+Book numbers not printed: #61, #114, #153, #154, #155. 2 of them are owned cards, which print none; the other 3 are cards still to send, most likely on a club's next spread.
