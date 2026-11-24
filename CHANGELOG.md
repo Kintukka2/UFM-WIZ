@@ -8,6 +8,15 @@ a release.
 
 ## [Unreleased]
 
+## [0.10.0] - Unreleased
+
+### Added
+
+- **England 3 complete in the card database.** The twelve England 3 club books
+  still to read, Bradford's second spread to Wigan, and the last spreads of
+  Wimbledon and Bromley add 363 cards and bring the database to 5,507. One of
+  them carries its full stats.
+
 ## [0.9.0] - Unreleased
 
 ### Added
